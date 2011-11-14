@@ -29,4 +29,12 @@ class circuitA : public circuit{
 		circuitA();
 		void reglage(double cN,double rN);//permet de modifier les valeurs
 };
+class circuitB : public circuit{
+	protected:
+		double R,C1,R1;
+	public:
+		circuitB();
+		void resoluCasEtude(); //methode jeje de resolution 
+};
+
 #endif

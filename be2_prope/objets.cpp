@@ -73,3 +73,24 @@ void circuitA::reglage(double cN,double rN){
 	a=R*C;
 	b=1;
 }
+
+circuitB::circuitB(){
+	R=1.0;
+	R1=1.0;
+	C1=1.0;
+	
+}
+
+void circuitB::resoluCasEtude(){
+	/*
+	// ci=0
+	double vd;
+	while // tant que t< durée
+	if(vd>.6){ //equa dif ve-.6=vs(R/R1+R1/R)+RCvs' et ci =0 que la 1er fois (charge)
+	vd=(ve-R*i)-vs;	
+	}
+	else //equa du type R1Cvs'+vs=0 avec ci non null (decharge)
+	{
+	}
+	*/
+}
