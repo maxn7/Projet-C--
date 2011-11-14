@@ -38,22 +38,22 @@ circuit::circuit(){
 		cout << "Choisir la source ?" << endl;
 		cout << "1 - Echelon" << endl;
 		cout << "2 - Porte" << endl;
-		cout << "3 - Triangle" << endl;
-		cout << "4 - Carré" << endl;
+		cout << "3 - Carré" << endl;
+		cout << "4 - Triangle" << endl;
 		cin >> choix;
 
 		switch(choix){
 		case 1:
-			generateur=new echelon;
+			generateur=new echelon; 
 			break;
 		case 2:
 			generateur=new porte;
 			break;
 		case 3:
-			cout << "todo" << endl;
+			generateur=new carre;
 			break;	
 		case 4:
-			cout << "todo" << endl;
+			generateur=new triangle;
 		    break;		
 		default:
 			break;
@@ -62,8 +62,17 @@ circuit::circuit(){
 }
 /* Circuit A avec comme param R et C */
 circuitA::circuitA(){
-	R=1.0;
-	C=1.0;
+	cout << "Choix des valeurs pour le circuit suivant :" << endl ;
+	cout << "_____/\\/\\/\\____  " << endl ;
+	cout << "|      R      _|_" << endl ;
+	cout << "E           C ---" << endl ;
+	cout << "|______________|" << endl ;
+	
+	cout << "Valeur de R (Ohm) : " << endl;
+	cin >> R ;
+	cout << "Valeur de C (Farad) : " << endl ;
+	cin >> C ;
+	
 	a=R*C;
 	b=1;
 }
