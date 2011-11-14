@@ -1,0 +1,38 @@
+#ifndef DEF_source
+#define DEF_source
+//Classe Mère Source 
+class source{ 
+
+	protected:
+		double T,phi,offset,ampli,alpha;
+	public:
+		source();
+		virtual double E(double t)=0; //fct virtuelle de la source 
+		void reglage(double TN, double phiN, double offsetN, double ampliN); //permet de modifier les param du gene
+};
+//classe fille pour les 4 différents signaux d'entrés
+class echelon : public source{
+	public:
+		 double E(double t);	 
+};
+
+class porte : public source{
+	public:
+		 double E(double t);
+};
+
+class triangle : public source{
+	public:
+		 double E(double t);
+};
+class carre : public source{
+	public:
+		 double E(double t);
+};
+
+//Classe fille pour permetant de traiter l'exo1
+class fctExo1 : public source{
+	public:
+		 double E(double t);
+};
+#endif
