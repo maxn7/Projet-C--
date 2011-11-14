@@ -10,7 +10,7 @@ euler::euler(){
 	a=0.0;
 	b=0.0;
 	ci=0.0;
-	pas=0.1;
+	pas=0.01;
 	duree=10.0;
 }
 void euler::solve(){
