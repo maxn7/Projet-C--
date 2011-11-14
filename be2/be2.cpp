@@ -12,8 +12,6 @@ int main()
 	test.solve();*/ //code partie 2
 
 	/*Circuit a*/
-	circuita test(1,1,4);
-	test.solve();
 
 	return 0;
 

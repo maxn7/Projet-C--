@@ -20,33 +20,44 @@ void euler::solve(){
 
 	while(t<duree)
 	{
-		u=(pas/a)*(f(t)+up*(-b+a/pas));
+		u=(pas/a)*(generateur->E(t)+up*(-b+a/pas));
 		up=u;
-		cout << t << "  " << f(t) <<"  "<<up<< endl;
+		cout << t << "  " <<generateur->E(t) <<"  "<<up<< endl;
 		t=t+pas;
 	}
 
 }
 
-/* Méthodes de la classe "exemple1". */
-double exemple1:: f(double t){
-	return -3*t;
-}
 
-exemple1::exemple1(){
-	a=1;
-	b=3;
-	ci=0;
+/* Méthodes de la classe "circuit". */
+circuit::circuit(source * gene){
+	generateur=gene;	//generateur = gene;
 }
 
 /* Méthodes de la classe "circuita". */
-
-circuita::circuita(double C, double R, int tsource){
+ circuita::circuita(double C, double R){
 	a=R*C;
 	b=1;
-	source = tsource;
 }
-double circuita:: f(double t){
+
+/* Méthodes de la classe "source". */
+source::source(double Tn ,double phin , double offsetn,double amplin){
+	
+	T=Tn;
+	phi=phin;
+	offset=offsetn;
+	ampli=amplin;
+
+}
+
+double echelon::E(double t){
+	double fx;
+	if(phi <t ) fx= offset+ampli;
+	else fx= offset;
+	return fx;
+	
+}
+	/*
 	double fx;
 	double T=2.0,phi=0,offset=0.0,ampli=5.0,alpha=.5;
 		switch(source){
@@ -76,4 +87,4 @@ double circuita:: f(double t){
 			break;
 		}
 	return fx;
-}
+	*/
