@@ -15,8 +15,8 @@ using namespace std;
 
 int main(int argc, char **argv)
 {	
-	circuitA test;
-	test.solve();
+	circuitB test;
+	test.solveB();
 	return 0;
 }
 

@@ -4,11 +4,14 @@
 class source{ 
 
 	protected:
-		double T,phi,offset,ampli,alpha;
+		double T,phi,offset,ampli,alpha,sauvAmpli;
 	public:
 		source();
 		virtual double E(double t)=0; //fct virtuelle de la source 
-		void reglage(double TN, double phiN, double offsetN, double ampliN); //permet de modifier les param du gene
+		
+		void reglageOffset(double offsetN);
+		void on(); //permet de modifier les param du gene
+		void off();
 };
 //classe fille pour les 4 différents signaux d'entrés
 class echelon : public source{

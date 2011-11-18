@@ -11,19 +11,26 @@ source::source(){
 	phi=0;
 	offset=0;
 	ampli=5;
+	sauvAmpli=ampli;
 	alpha=.5;
 }
 
-void source::reglage(double TN, double phiN, double offsetN, double ampliN){
-	T=TN;
-	phi=phiN;
-	offset=offsetN;
-	ampli=ampliN;
+void source::reglageOffset(double offsetN){
+	offset = offset+offsetN;
+}
+
+void source::on(){
+	ampli = sauvAmpli;
+}
+
+void source::off(){
+	sauvAmpli=ampli;
+	ampli = 0;
 }
 
 double echelon::E(double t){
 	double fx;
-	if(phi <t ) fx= offset+ampli;
+	if(phi <=t ) fx= offset+ampli;
 	else fx= offset;
 	return fx;
 }

@@ -10,20 +10,17 @@ euler::euler(){
 	ci=0.0;
 	pas=0.1;
 	duree=10.0;
+	u=0.0;
+	up=0.0;
+	t=0.0;
 }
 
 void euler::solve(){
 	//int N= ((double)duree/(double)pas),i=0;
-	double u=ci, up=ci;
-	double t=0;
-
-	while(t<duree)
-	{
-		u=(pas/a)*(generateur->E(t)+up*(-b+a/pas));
 		up=u;
+		u=(pas/a)*(generateur->E(t)+up*(-b+a/pas));
 		cout << t << "  " <<generateur->E(t) <<"  "<<up<< endl;
 		t=t+pas;
-	}
 }
 
 exemple1::exemple1(){   //c'est le cas ex1 special
@@ -84,22 +81,42 @@ void circuitA::reglage(double cN,double rN){
 }
 
 circuitB::circuitB(){
+	Rd=1.0;
 	R=1.0;
-	R1=1.0;
-	C1=1.0;
+	C=1.0;
 	
 }
 
-void circuitB::resoluCasEtude(){
-	/*
-	// ci=0
-	double vd;
-	while // tant que t< durée
-	if(vd>.6){ //equa dif ve-.6=vs(R/R1+R1/R)+RCvs' et ci =0 que la 1er fois (charge)
-	vd=(ve-R*i)-vs;	
-	}
-	else //equa du type R1Cvs'+vs=0 avec ci non null (decharge)
-	{
-	}
-	*/
+void circuitB::solveB(){
+	
+	 ci=0;
+	 int bloquee=1;
+	double vd=.7;
+	//vd=ve-vrd-vs avec vrd=rd*ic=rd*C*(u-up)/h+u/R
+	while(t<duree){
+		if(vd>=.6 && bloquee ){ //equa dif ve-.6=vs(R/R1+R1/R)+RCvs' et ci =0 que la 1er fois (charge)
+			a=Rd*C;	//		
+			b=1+Rd/R;
+			generateur->on();
+			generateur->reglageOffset(-0.6);
+			ci=u;
+			cout << "diode passante"<<endl;
+			bloquee=0;
+		}
+		if(vd<.6 && !bloquee ) //equa du type R1Cvs'+vs=0 avec ci non null (decharge)
+		{
+			generateur->reglageOffset(0.6);
+			a=R*C;
+			b=1;
+			generateur->off();
+			ci=u;
+			cout << "diode bloquee"<<endl;
+			bloquee=1;
+		}
+		
+		solve();
+		//cout <<"iii"<< generateur->E(t) << "iiii"<< <<endl;
+		vd=generateur->E(t)-u-Rd*C*(u-up)/pas+u/R;
+		cout <<"vd"<< vd <<endl;
+	}	
 }
