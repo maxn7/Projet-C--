@@ -7,9 +7,8 @@
 
 
 #include <iostream>
-#include <fstream>
-#include "objets.h"
-#include "source.h"
+#include "circuits.h"
+#include "sources.h"
 
 using namespace std;
 
