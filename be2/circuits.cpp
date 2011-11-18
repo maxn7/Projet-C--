@@ -1,3 +1,8 @@
+/* Programmation ortientée objet : BE2 */
+/* Jérémie Fourmann et Maxime Morin    */
+/* circuits.cpp                        */
+/* Définition des classes circuits     */
+
 #include <iostream>
 #include <math.h>
 #include "circuits.h"
@@ -21,12 +26,13 @@ void euler::diffSolve(){
 		t=t+pas;
 }
 
-exemple1::exemple1(){   //c'est le cas ex1 special
+exemple1::exemple1(){   //Cas spécial de l'exercice 1
 	a=1;
 	b=3;
 	generateur = new fctExo1;	
 }
-/* Choix de la source lors de la creation d'un circuit*/
+
+/* Choix de la source lors de la creation d'un circuit. */
 circuit::circuit(){
 	int choix=0;
 	
@@ -55,7 +61,7 @@ circuit::circuit(){
 		}
 }
 
-/* Circuit A avec comme param R et C */
+/* Circuit A avec comme paramètres R et C */
 circuitA::circuitA(){
 	cout << "#Choix des valeurs pour le circuit suivant :" << endl ;
 	cout << "#_____/\\/\\/\\____  " << endl ;
@@ -73,6 +79,7 @@ circuitA::circuitA(){
 	generateur->setAB(1,0); // Esm(t) = E(t) 
 }
 
+/* Résolution de l'équation différentielle du circuitA pour la source choisie. */
 void circuitA::circuitSolve(){
 
 	cout << "#Temps" << "   " << "Ve" <<"   " << "Vs" << "   " << endl;
@@ -83,7 +90,7 @@ void circuitA::circuitSolve(){
 }
 
 
-/* Circuit B avec comme param Rd, R et C */
+/* Circuit B avec comme paramètres Rd, R et C. */
 circuitB::circuitB(){
 	cout << "#Choix des valeurs pour le circuit suivant :" << endl ;
 	cout << "#_____/\\/\\/\\____|\\______________  " << endl ;
@@ -101,11 +108,13 @@ circuitB::circuitB(){
 	cin >> C ;		
 }
 
+/*Résolution des équations différentielles circuitB pour la source
+choisie, pour les deux différents états de la diode */
 void circuitB::circuitSolve(){
-	bool bloquee=1;
-	double vd=.7;
-	 
-	 ci=0;
+	bool bloquee=1; //Flag d'état de la diode
+	double vd=.7;   // A t=0, C déchargée donc D passante (vd>0.6)	 
+	ci=0;			// C déchargée
+	
 	cout << "#Temps" << "   " << "Ve" <<"   " << "Vs" << "   " << "Vd" << endl;
 	while(t<=duree){
 		if(vd>=.6 && bloquee ){ 
@@ -116,19 +125,17 @@ void circuitB::circuitSolve(){
 			cout << "#Diode passante"<<endl;
 			bloquee=0;
 		}
-		if(vd<.6 && !bloquee ) //equa du type R1Cvs'+vs=0 avec ci non null (decharge)
+		if(vd<.6 && !bloquee )
 		{
 			a=R*C;
 			b=1;
-			generateur->setAB(0,0); //Second membre nul
+			generateur->setAB(0,0); // Second membre nul, décharge de C dans R
 			ci=u;
 			cout << "#Diode bloquee"<<endl;
 			bloquee=1;
 		}
-		
 		diffSolve();
 		vd=generateur->E(t)-u-Rd*C*(u-up)/pas+u/R;
-
 		cout << t << "   " << generateur->E(t) <<"   " << u << "   " << vd << endl;
 	}	
 }

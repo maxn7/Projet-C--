@@ -1,8 +1,13 @@
+/* Programmation ortientée objet : BE2 */
+/* Jérémie Fourmann et Maxime Morin    */
+/* circuits.h                          */
+/* Déclaration des classes circuits    */
 
-#ifndef DEF_objets
-#define DEF_objets
+#ifndef DEF_circuits
+#define DEF_circuits
 #include "sources.h"
-/* Classe "euler" resolution de au'+bu=f. */
+
+/* Classe "euler" pour la résolution de au'+bu=f. */
 class euler{
 	protected:
 		double a,b,ci,pas,duree,u,up,t ; 
@@ -12,17 +17,20 @@ class euler{
 		void diffSolve();
 		virtual void circuitSolve() =0;
 };
-/* Classe ex1 resolution qui sert a rien */
+
+/* Classe "exemple1". */
 class exemple1 : public euler{
 	public:
 		exemple1();
 };
-/* Classe circuit (choix de la source) */
+
+/* Classe "circuit" (permet le choix de la source) */
 class circuit : public euler{
 	public:
 		circuit();
 };
-/* Classe circuitA  */
+
+/* Classe "circuitA". */
 class circuitA : public circuit{
 	protected:
 		double R,C;
@@ -31,7 +39,7 @@ class circuitA : public circuit{
 		void circuitSolve();
 };
 
-/* Classe circuitA  */
+/* Classe "circuitB". */
 class circuitB : public circuit{
 	protected:
 		double Rd,C,R;

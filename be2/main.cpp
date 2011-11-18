@@ -1,9 +1,7 @@
-//      
-//      
-//     TD1-Programation C++
-//
-//      
-//      
+/* Programmation ortientée objet : BE2 */
+/* Jérémie Fourmann et Maxime Morin    */
+/* main.cpp                            */
+/* Programme principal                 */
 
 
 #include <iostream>
