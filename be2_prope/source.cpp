@@ -8,24 +8,22 @@ using namespace std;
 
 source::source(){
 	T=2;
-	phi=0;
+	phi=1;
 	offset=0;
 	ampli=5;
-	sauvAmpli=ampli;
-	alpha=.5;
+	alpha=.6;
+	A=1, B=0;
 }
 
-void source::reglageOffset(double offsetN){
-	offset = offset+offsetN;
-}
+double source::Esm(double t)
+{
+	return A*E(t)+B ;
+} 
 
-void source::on(){
-	ampli = sauvAmpli;
-}
-
-void source::off(){
-	sauvAmpli=ampli;
-	ampli = 0;
+void source::setAB(double Ai, double Bi)
+{
+	A = Ai;
+	B = Bi;
 }
 
 double echelon::E(double t){
@@ -42,20 +40,19 @@ double porte::E(double t){
 	return fx;
 }
 
-double triangle::E(double t){
-	double fx;
-	if(t-floor((t-phi)/T)*T<=T/2) fx=(t-floor((t-phi)/T)*T-.5)*ampli+offset;
-			else fx=(-(t-floor((t-phi)/T)*T)+2-.5)*ampli+offset;
-	return fx;
-}
-
 double carre::E(double t){
 	double fx;
-	if(t-floor((t-phi)/T)*T<T*alpha) fx=offset+ampli;
+	if((t-phi)-floor((t-phi)/T)*T<T*alpha) fx=offset+ampli;
 			else fx=offset;
 	return fx;
 }
 
+double triangle::E(double t){
+	double fx;
+	if((t-phi)-floor((t-phi)/T)*T<=T/2) fx=((t-phi)-floor((t-phi)/T)*T-.5)*ampli+offset;
+			else fx=(-((t-phi)-floor((t-phi)/T)*T)+2-.5)*ampli+offset;
+	return fx;
+}
 
 double fctExo1::E(double t){
 	

@@ -5,13 +5,13 @@ class source{
 
 	protected:
 		double T,phi,offset,ampli,alpha,sauvAmpli;
+		double A,B;
 	public:
 		source();
 		virtual double E(double t)=0; //fct virtuelle de la source 
-		
-		void reglageOffset(double offsetN);
-		void on(); //permet de modifier les param du gene
-		void off();
+		double Esm(double t); // Transformation affine de E pour changer amplitude
+							  // ou ajouter un offset dans le second membre
+		void setAB(double Ai, double Bi); //accesseur pour les valeurs A et B
 };
 //classe fille pour les 4 différents signaux d'entrés
 class echelon : public source{

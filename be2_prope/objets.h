@@ -9,7 +9,8 @@ class euler{
 		source *generateur;
 	public:
 		euler();
-		void solve();
+		void diffSolve();
+		virtual void circuitSolve() =0;
 };
 /* Classe ex1 resolution qui sert a rien */
 class exemple1 : public euler{
@@ -27,14 +28,16 @@ class circuitA : public circuit{
 		double R,C;
 	public:
 		circuitA();
-		void reglage(double cN,double rN);//permet de modifier les valeurs
+		void circuitSolve();
 };
+
+/* Classe circuitA  */
 class circuitB : public circuit{
 	protected:
 		double Rd,C,R;
 	public:
 		circuitB();
-		void solveB(); //methode jeje de resolution 
+		void circuitSolve();
 };
 
 #endif
