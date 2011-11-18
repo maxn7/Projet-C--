@@ -5,7 +5,7 @@
 /* Classe "euler" resolution de au'+bu=f. */
 class euler{
 	protected:
-		double a,b,ci,pas,duree ; 
+		double a,b,ci,pas,duree,u,up,t ; 
 		source *generateur;
 	public:
 		euler();
@@ -31,10 +31,10 @@ class circuitA : public circuit{
 };
 class circuitB : public circuit{
 	protected:
-		double R,C1,R1;
+		double Rd,C,R;
 	public:
 		circuitB();
-		void resoluCasEtude(); //methode jeje de resolution 
+		void solveB(); //methode jeje de resolution 
 };
 
 #endif
