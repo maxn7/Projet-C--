@@ -1,7 +1,7 @@
-/* Programmation ortientée objet : BE2 */
-/* Jérémie Fourmann et Maxime Morin    */
+/* Programmation ortientee objet : BE2 */
+/* Jeremie Fourmann et Maxime Morin    */
 /* sources.cpp                         */
-/* Définition des classes sources      */
+/* Definition des classes sources      */
 
 #include <iostream>
 #include "sources.h"
@@ -10,7 +10,7 @@
 using namespace std;
 
 
-/* Méthodes de la classe mère "source". */
+/* Methodes de la classe mère "source". */
 source::source(){
 	T=2;
 	phi=1;
@@ -25,7 +25,7 @@ double source::Esm(double t) // Transformation affine du signal de la source
 	return A*E(t)+B ;
 }
 
-/* Définitions des sources filles pour différents types de signaux ou fonctions. */
+/* Definitions des sources filles pour differents types de signaux ou fonctions. */
 
 double fctExo1::E(double t){
 	

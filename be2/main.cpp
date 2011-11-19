@@ -1,5 +1,5 @@
-/* Programmation ortientée objet : BE2 */
-/* Jérémie Fourmann et Maxime Morin    */
+/* Programmation ortientee objet : BE2 */
+/* Jeremie Fourmann et Maxime Morin    */
 /* main.cpp                            */
 /* Programme principal                 */
 

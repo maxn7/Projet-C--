@@ -1,13 +1,13 @@
-/* Programmation ortientée objet : BE2 */
-/* Jérémie Fourmann et Maxime Morin    */
+/* Programmation ortientee objet : BE2 */
+/* Jeremie Fourmann et Maxime Morin    */
 /* circuits.h                          */
-/* Déclaration des classes circuits    */
+/* Declaration des classes circuits    */
 
 #ifndef DEF_circuits
 #define DEF_circuits
 #include "sources.h"
 
-/* Classe "euler" pour la résolution de au'+bu=f. */
+/* Classe "euler" pour la resolution de au'+bu=f. */
 class euler{
 	protected:
 		double a,b,ci,pas,duree,u,up,t ; 

@@ -1,7 +1,7 @@
-/* Programmation ortientée objet : BE2 */
-/* Jérémie Fourmann et Maxime Morin    */
+/* Programmation ortientee objet : BE2 */
+/* Jeremie Fourmann et Maxime Morin    */
 /* circuits.cpp                        */
-/* Définition des classes circuits     */
+/* Definition des classes circuits     */
 
 #include <iostream>
 #include <math.h>
@@ -26,7 +26,7 @@ void euler::diffSolve(){
 		t=t+pas;
 }
 
-exemple1::exemple1(){   //Cas spécial de l'exercice 1
+exemple1::exemple1(){   //Cas special de l'exercice 1
 	a=1;
 	b=3;
 	generateur = new fctExo1;	
@@ -39,7 +39,7 @@ circuit::circuit(){
 		cout << "#Choisir la source ?" << endl;
 		cout << "#1 - Echelon" << endl;
 		cout << "#2 - Porte" << endl;
-		cout << "#3 - Carré" << endl;
+		cout << "#3 - Carre" << endl;
 		cout << "#4 - Triangle" << endl;
 		cin >> choix;
 
@@ -79,7 +79,7 @@ circuitA::circuitA(){
 	generateur->setAB(1,0); // Esm(t) = E(t) 
 }
 
-/* Résolution de l'équation différentielle du circuitA pour la source choisie. */
+/* Resolution de l'equation differentielle du circuitA pour la source choisie. */
 void circuitA::circuitSolve(){
 
 	cout << "#Temps" << "   " << "Ve" <<"   " << "Vs" << "   " << endl;
@@ -108,12 +108,12 @@ circuitB::circuitB(){
 	cin >> C ;		
 }
 
-/*Résolution des équations différentielles circuitB pour la source
-choisie, pour les deux différents états de la diode */
+/*Resolution des equations differentielles circuitB pour la source
+choisie, pour les deux differents etats de la diode */
 void circuitB::circuitSolve(){
-	bool bloquee=1; //Flag d'état de la diode
-	double vd=.7;   // A t=0, C déchargée donc D passante (vd>0.6)	 
-	ci=0;			// C déchargée
+	bool bloquee=1; //Flag d'etat de la diode
+	double vd=.7;   // A t=0, C dechargee donc D passante (vd>0.6)	 
+	ci=0;			// C dechargee
 	
 	cout << "#Temps" << "   " << "Ve" <<"   " << "Vs" << "   " << "Vd" << endl;
 	while(t<=duree){
@@ -129,7 +129,7 @@ void circuitB::circuitSolve(){
 		{
 			a=R*C;
 			b=1;
-			generateur->setAB(0,0); // Second membre nul, décharge de C dans R
+			generateur->setAB(0,0); // Second membre nul, decharge de C dans R
 			ci=u;
 			cout << "#Diode bloquee"<<endl;
 			bloquee=1;

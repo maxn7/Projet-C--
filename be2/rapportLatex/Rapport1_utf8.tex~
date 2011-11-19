@@ -1,0 +1,105 @@
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage {eurosym}
+
+\usepackage{float}
+
+\geometry{a4paper,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1.5cm,headheight=2.2cm,headsep=0.5cm,footskip=1cm}
+\columnsep=0.6cm
+
+\graphicspath{{images/}} 
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\lstset{columns=flexible,keepspaces=true, breaklines,breakindent=0pt} 
+
+\lstset{language=C++,
+%basicstyle=\ttfamily,
+keywordstyle=\color{blue}\bfseries,
+stringstyle=\color{red},
+commentstyle=\color{blue!20!black!30!green},
+morecomment=[s][\color{black}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=2,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
+
+
+\fancypagestyle{plain}{
+% noms des respo   dans le bas de page                                            
+\lfoot{Projet de C++}
+\rfoot{M.Morin J.Fourmann}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}}
+% Titre a compl»ter
+\title{\textbf{ \huge{Projet de programmation C++}} \\{\Large  Résolution de circuit}}
+
+\author{
+\textsc{Jérémie Fourmann} (Promo 2013 - Eléctronique - Enseeiht)\\ %mettre votre nom
+\textsc{Maxime Morin} (Promo 2013 - Eléctronique - Enseeiht)\\ %mettre votre nom
+%\textsc{ddd dddd} (Promo - departement - respo)     %2 nom
+}
+
+\begin{document}
+
+\pagestyle{plain}
+
+\maketitle
+\vspace{1cm}
+\renewcommand{\contentsname}{Plan}
+\tableofcontents
+\vspace{2cm}
+
+
+
+\newpage
+
+
+%Objectif
+
+\section{Objectif}
+\section{Organistion du code}
+
+\section{Code Source}
+  \subsection{main.cpp}
+    \lstinputlisting{../main.cpp}
+    \newpage
+  \subsection{circuits.h}
+    \lstinputlisting{../circuits.h}
+    \newpage
+  \subsection{circuits.cpp}
+    \lstinputlisting{../circuits.cpp}
+    \newpage
+   \subsection{sources.h}
+    \lstinputlisting{../sources.h}
+    \newpage
+   \subsection{sources.cpp}
+    \lstinputlisting{../sources.cpp}
+    \newpage
+
+\section{Résultats}
+  \subsection{Réponse du CircuitB}
+    \begin{center}
+      \begin{figure}[H]
+	\input plot %fichier généré par -> gnuplot aTrace
+	\caption{Réponse à un echelon de tension}
+      \end{figure}
+    \end{center}
+\end{document}

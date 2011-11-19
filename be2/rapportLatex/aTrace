@@ -1,0 +1,6 @@
+set terminal latex
+set output "plot.tex"
+set xlabel "Temps"
+set ylabel "V"
+plot "../plot/source.txt" using 1:2 with lines,"../plot/source.txt" using 1:3 with lines,"../plot/source.txt" using 1:4 with lines
+unset output

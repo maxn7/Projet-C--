@@ -1,7 +1,7 @@
 /* Programmation ortientée objet : BE2 */
-/* Jérémie Fourmann et Maxime Morin    */
+/* Jeremie Fourmann et Maxime Morin    */
 /* sources.h                           */
-/* Déclaration des classes sources     */
+/* Declaration des classes sources     */
 
 #ifndef DEF_sources
 #define DEF_sources
@@ -26,7 +26,7 @@ class fctExo1 : public source{
 		 double E(double t);
 };
 
-/* Classes filles pour les différnets signaux d'entrée. */
+/* Classes filles pour les differnets signaux d'entree. */
 class echelon : public source{
 	public:
 		 double E(double t);	 
