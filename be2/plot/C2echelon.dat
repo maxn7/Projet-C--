@@ -1,8 +1,4 @@
-Choisir la source ?
-1 - Echelon
-2 - Porte
-3 - Carré
-4 - Triangle
+
 #Temps   Ve   Vs   Vd
 #Diode passante
 0.1   0   -0.06   0.6

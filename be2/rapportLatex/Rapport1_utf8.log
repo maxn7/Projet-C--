@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.21)  19 NOV 2011 15:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.21)  19 NOV 2011 19:33
 entering extended mode
  %&-line parsing enabled.
 **Rapport1_utf8.tex
@@ -376,6 +376,7 @@ Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
 Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
 t (HO)
 ))
+Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
 Package hyperref Info: Hyper figures OFF on input line 2975.
 Package hyperref Info: Link nesting OFF on input line 2980.
 Package hyperref Info: Hyper index ON on input line 2983.
@@ -423,7 +424,7 @@ Package hyperref Info: Hyper figures OFF on input line 4377.
 Package hyperref Info: Link nesting OFF on input line 4382.
 Package hyperref Info: Hyper index ON on input line 4385.
 Package hyperref Info: backreferencing OFF on input line 4392.
-Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring ON on input line 4395.
 Package hyperref Info: Link coloring with OCG OFF on input line 4402.
 Package hyperref Info: PDF/A mode OFF on input line 4407.
 
@@ -585,23 +586,23 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 ) (./Rapport1_utf8.aux)
 \openout1 = `Rapport1_utf8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Info: Redefining \degres on input line 60.
-LaTeX Info: Redefining \dots on input line 60.
-LaTeX Info: Redefining \up on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Info: Redefining \degres on input line 61.
+LaTeX Info: Redefining \dots on input line 61.
+LaTeX Info: Redefining \up on input line 61.
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
@@ -656,7 +657,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring ON on input line 61.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -665,8 +666,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
 
 (./Rapport1_utf8.out) (./Rapport1_utf8.out)
 \@outlinefile=\write3
@@ -674,17 +675,17 @@ LaTeX Info: Redefining \pageref on input line 60.
 
 \AtBeginShipoutBox=\box34
 \c@lstlisting=\count128
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 65.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -697,7 +698,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 82.
+nput line 83.
  (../main.cpp
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1.
 
@@ -794,23 +795,41 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[8]) [9] (./plot.tex
+[8]) [9] (./C2echelon.tex
 \plotpoint=\box35
-) [10pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-}) has been already used, duplicate ignored
+) (./C2porte.tex) (./C2carre.tex) [10pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.107 \end{document}
+l.123 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.123 
+      ] (./C2triangle.tex) [11pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.133 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.133 \end{document}
                     ] (./Rapport1_utf8.aux) ) 
 Here is how much of TeX's memory you used:
- 9424 strings out of 495061
- 126318 string characters out of 1182621
- 596439 words of memory out of 3000000
- 12036 multiletter control sequences out of 15000+50000
+ 9439 strings out of 495061
+ 126499 string characters out of 1182621
+ 596465 words of memory out of 3000000
+ 12034 multiletter control sequences out of 15000+50000
  19567 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,12n,58p,258b,1796s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,58p,278b,1796s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/jeje/.texmf-var/fonts/pk/l
 jfour/jknappen/ec/eccc1095.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknapp
 en/ec/ecrm0600.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx12
@@ -821,9 +840,9 @@ ts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour
 /jknappen/ec/eccc1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecrm1440.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.60
 0pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Rapport1_utf8.pdf (10 pages, 171408 bytes).
+Output written on Rapport1_utf8.pdf (11 pages, 203897 bytes).
 PDF statistics:
- 823 PDF objects out of 1000 (max. 8388607)
- 378 named destinations out of 1000 (max. 500000)
+ 841 PDF objects out of 1000 (max. 8388607)
+ 386 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
