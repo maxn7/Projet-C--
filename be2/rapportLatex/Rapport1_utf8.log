@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.21)  19 NOV 2011 19:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.21)  20 NOV 2011 11:02
 entering extended mode
  %&-line parsing enabled.
 **Rapport1_utf8.tex
@@ -586,23 +586,23 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 ) (./Rapport1_utf8.aux)
 \openout1 = `Rapport1_utf8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Info: Redefining \degres on input line 61.
-LaTeX Info: Redefining \dots on input line 61.
-LaTeX Info: Redefining \up on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Info: Redefining \degres on input line 63.
+LaTeX Info: Redefining \dots on input line 63.
+LaTeX Info: Redefining \up on input line 63.
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
@@ -657,7 +657,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring ON on input line 61.
+Package hyperref Info: Link coloring ON on input line 63.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -666,8 +666,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
 
 (./Rapport1_utf8.out) (./Rapport1_utf8.out)
 \@outlinefile=\write3
@@ -675,17 +675,17 @@ LaTeX Info: Redefining \pageref on input line 61.
 
 \AtBeginShipoutBox=\box34
 \c@lstlisting=\count128
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -697,8 +697,29 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<images/circuitDiagram.png, id=96, 292.84406pt x 398.23781pt>
+File: images/circuitDiagram.png Graphic file (type png)
+
+<use images/circuitDiagram.png>
+<images/sourceDiagram.png, id=97, 663.22781pt x 262.73157pt>
+File: images/sourceDiagram.png Graphic file (type png)
+
+<use images/sourceDiagram.png> [2pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.97 \newpage
+             pdfTeX warning (ext4): destination with the same identifier (name{
+figure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.97 \newpage
+              <./images/circuitDiagram.png (PNG copy)> <./images/sourceDiagram.
+png (PNG copy)>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 83.
+nput line 100.
  (../main.cpp
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1.
 
@@ -707,8 +728,8 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
-) [2] (../circuits.h)
-[3] (../circuits.cpp [4]
+) [3] (../circuits.h)
+[4] (../circuits.cpp [5]
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC¨ not set up for use with La
 TeX.
@@ -737,7 +758,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[5]) [6] (../sources.h
+[6]) [7] (../sources.h
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC© not set up for use with La
 TeX.
@@ -780,7 +801,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [7] (../sources.cpp
+) [8] (../sources.cpp
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC¨ not set up for use with La
 TeX.
@@ -795,54 +816,79 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[8]) [9] (./C2echelon.tex
-\plotpoint=\box35
-) (./C2porte.tex) (./C2carre.tex) [10pdfTeX warning (ext4): destination with th
-e same identifier (name{figure.1}) has been already used, duplicate ignored
+[9]) [10]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/C2echelon.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+<images/C2echelon.pdf, id=496, 361.35pt x 216.81pt>
+File: images/C2echelon.pdf Graphic file (type pdf)
+ <use images/C2echelon.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/C2porte.pdf): PDF inclusion: f
+ound PDF version <1.5>, but at most version <1.4> allowed
+<images/C2porte.pdf, id=498, 361.35pt x 216.81pt>
+File: images/C2porte.pdf Graphic file (type pdf)
+ <use images/C2porte.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/C2carre.pdf): PDF inclusion: f
+ound PDF version <1.5>, but at most version <1.4> allowed
+<images/C2carre.pdf, id=500, 361.35pt x 216.81pt>
+File: images/C2carre.pdf Graphic file (type pdf)
+ <use images/C2carre.pdf>
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.123 
+l.140 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.123 
-      ] (./C2triangle.tex) [11pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.3}) has been already used, duplicate ignored
+l.140 
+       <./images/C2echelon.pdf> <./images/C2porte.pdf>]
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/C2triangle.pdf): PDF inclusion
+: found PDF version <1.5>, but at most version <1.4> allowed
+<images/C2triangle.pdf, id=524, 361.35pt x 216.81pt>
+File: images/C2triangle.pdf Graphic file (type pdf)
+
+<use images/C2triangle.pdf> [12pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.133 \end{document}
+l.150 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
- (name{figure.4}) has been already used, duplicate ignored
+ (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.133 \end{document}
-                    ] (./Rapport1_utf8.aux) ) 
+l.150 \end{document}
+                     <./images/C2carre.pdf> <./images/C2triangle.pdf>]
+(./Rapport1_utf8.aux) ) 
 Here is how much of TeX's memory you used:
- 9439 strings out of 495061
- 126499 string characters out of 1182621
+ 9469 strings out of 495061
+ 127211 string characters out of 1182621
  596465 words of memory out of 3000000
- 12034 multiletter control sequences out of 15000+50000
+ 12063 multiletter control sequences out of 15000+50000
  19567 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,12n,58p,278b,1796s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/jeje/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/eccc1095.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecrm0600.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx12
-00.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </
-home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/jeje/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/jeje/.texmf-var/fon
-ts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/eccc1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecrm1440.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.60
-0pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Rapport1_utf8.pdf (11 pages, 203897 bytes).
+ </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
+0600.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> 
+</home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/jeje/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/jeje/.texmf-var/f
+onts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/jeje/.texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecbx1440.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1200.
+600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </hom
+e/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Rapport1_utf8.pdf (12 pages, 254782 bytes).
 PDF statistics:
- 841 PDF objects out of 1000 (max. 8388607)
- 386 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 919 PDF objects out of 1000 (max. 8388607)
+ 391 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

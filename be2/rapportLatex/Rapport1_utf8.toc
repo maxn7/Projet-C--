@@ -1,15 +1,17 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Objectif}{2}{section.1}
 \contentsline {section}{\numberline {2}Organistion du code}{2}{section.2}
-\contentsline {section}{\numberline {3}Code Source}{2}{section.3}
-\contentsline {subsection}{\numberline {3.1}main.cpp}{2}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}circuits.h}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}circuits.cpp}{4}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}sources.h}{7}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}sources.cpp}{8}{subsection.3.5}
-\contentsline {section}{\numberline {4}R\IeC {\'e}sultats}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}R\IeC {\'e}ponse du l'exemple 1}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}R\IeC {\'e}ponse du CircuitA}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}R\IeC {\'e}ponse du CircuitB}{10}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}R\IeC {\'e}ponse du CircuitC}{11}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}R\IeC {\'e}ponse du CircuitD}{11}{subsection.4.5}
+\contentsline {subsection}{\numberline {2.1}L'objet circuit}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}L'objet source}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Code Source}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}main.cpp}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}circuits.h}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}circuits.cpp}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}sources.h}{8}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}sources.cpp}{9}{subsection.3.5}
+\contentsline {section}{\numberline {4}R\IeC {\'e}sultats}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}R\IeC {\'e}ponse du l'exemple 1}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}R\IeC {\'e}ponse du CircuitA}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}R\IeC {\'e}ponse du CircuitB}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}R\IeC {\'e}ponse du CircuitC}{12}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}R\IeC {\'e}ponse du CircuitD}{12}{subsection.4.5}

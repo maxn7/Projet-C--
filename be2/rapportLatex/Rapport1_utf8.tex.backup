@@ -26,7 +26,7 @@
 \usepackage{xcolor}
 
 \lstset{columns=flexible,keepspaces=true, breaklines,breakindent=0pt} 
-\lstset{frameround=fttt}
+
 
 \lstset{language=C++,
 %basicstyle=\ttfamily,
@@ -77,7 +77,13 @@ showstringspaces=false}
 
 \section{Objectif}
 \section{Organistion du code}
-
+  \subsection{L'objet circuit}
+    \begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=.7]{circuitDiagram}
+	\caption{Hièrarchie de la classe circuit}
+	\end{center}
+      \end{figure}
 \section{Code Source}
   \subsection{main.cpp}
     \lstinputlisting{../main.cpp}
@@ -96,13 +102,38 @@ showstringspaces=false}
     \newpage
 
 \section{Résultats}
+  \subsection{Réponse du l'exemple 1}
+  \subsection{Réponse du CircuitA}
   \subsection{Réponse du CircuitB}
  
       \begin{figure}[H]
 	 \begin{center}
-	\input plot %fichier généré par -> gnuplot aTrace
+	\input C2echelon %fichier généré par -> gnuplot aTrace
 	\caption{Réponse à un echelon de tension}
 	\end{center}
       \end{figure}
+      
+      \begin{figure}[H]
+	      \begin{center}
+		\input C2porte %fichier généré par -> gnuplot aTrace
+		\caption{Réponse à une porte}
+	      \end{center}
+	    \end{figure}
+
+      \begin{figure}[H]
+	      \begin{center}
+		\input C2carre %fichier généré par -> gnuplot aTrace
+		\caption{Réponse à signal carré}
+	      \end{center}
+	    \end{figure}
+
+      \begin{figure}[H]
+	      \begin{center}
+		\input C2triangle %fichier généré par -> gnuplot aTrace
+		\caption{Réponse à signal triangle}
+	      \end{center}
+	    \end{figure}
     
+  \subsection{Réponse du CircuitC}
+  \subsection{Réponse du CircuitD}
 \end{document}

@@ -1,35 +1,23 @@
-set terminal latex
+
+set terminal pdf
 #set key off
-set key right outside
-set output "C2echelon.tex"
+a=2 #regle epesseur des traces
+set key right outside #posittionne la legende
 set xlabel "Temps"
 set ylabel "V"
-plot "../plot/C2echelon.dat"  using 1:2 with lines title "E(t)","../plot/C2echelon.dat" using 1:3 with lines title "Vs(t)","../plot/C2echelon.dat" using 1:4 with lines title "Vd(t)"
+
+set output "images/C2triangle.pdf"
+plot "../plot/C2triangle.dat" using 1:2 title "E(t)" with lines linewidth a,"../plot/C2triangle.dat" using 1:3 title "Vs(t)" with lines linewidth a ,"../plot/C2triangle.dat" using 1:4 title "Vd(t)" with lines linewidth a
 unset output
 
-set terminal latex
-#set key off
-set key right outside
-set output "C2porte.tex"
-set xlabel "Temps"
-set ylabel "V"
-plot "../plot/C2porte.dat"  using 1:2 with lines title "E(t)","../plot/C2porte.dat" using 1:3 with lines title "Vs(t)","../plot/C2porte.dat" using 1:4 with lines title "Vd(t)"
+set output "images/C2carre.pdf"
+plot "../plot/C2carre.dat" using 1:2 title "E(t)" with lines linewidth a,"../plot/C2carre.dat" using 1:3 title "Vs(t)" with lines linewidth a ,"../plot/C2carre.dat" using 1:4 title "Vd(t)" with lines linewidth a
 unset output
 
-set terminal latex
-#set key off
-set key right outside
-set output "C2carre.tex"
-set xlabel "Temps"
-set ylabel "V"
-plot "../plot/C2carre.dat"  using 1:2 with lines title "E(t)","../plot/C2carre.dat" using 1:3 with lines title "Vs(t)","../plot/C2carre.dat" using 1:4 with lines title "Vd(t)"
+set output "images/C2porte.pdf"
+plot "../plot/C2porte.dat" using 1:2 title "E(t)" with lines linewidth a,"../plot/C2porte.dat" using 1:3 title "Vs(t)" with lines linewidth a ,"../plot/C2porte.dat" using 1:4 title "Vd(t)" with lines linewidth a
 unset output
 
-set terminal latex
-#set key off
-set key right outside
-set output "C2triangle.tex"
-set xlabel "Temps"
-set ylabel "V"
-plot "../plot/C2triangle.dat"  using 1:2 with lines title "E(t)","../plot/C2triangle.dat" using 1:3 with lines title "Vs(t)","../plot/C2triangle.dat" using 1:4 with lines title "Vd(t)"
+set output "images/C2echelon.pdf"
+plot "../plot/C2echelon.dat" using 1:2 title "E(t)" with lines linewidth a,"../plot/C2echelon.dat" using 1:3 title "Vs(t)" with lines linewidth a ,"../plot/C2echelon.dat" using 1:4 title "Vd(t)" with lines linewidth a
 unset output
