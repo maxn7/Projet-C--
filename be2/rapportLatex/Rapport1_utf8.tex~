@@ -29,8 +29,9 @@
 
 
 \lstset{language=C++,
-%basicstyle=\ttfamily,
-keywordstyle=\color{blue}\bfseries,
+basicstyle=\ttfamil\footnotesize,
+breaklines, 
+keywordstyle=\bfseries\color{blue},
 stringstyle=\color{red},
 commentstyle=\color{blue!20!black!30!green},
 morecomment=[s][\color{black}]{/**}{*/},
@@ -57,6 +58,8 @@ showstringspaces=false}
 \textsc{Maxime Morin} (Promo 2013 - Eléctronique - Enseeiht)\\ %mettre votre nom
 %\textsc{ddd dddd} (Promo - departement - respo)     %2 nom
 }
+
+\graphicspath{{images/}}
 
 \begin{document}
 
@@ -117,29 +120,22 @@ showstringspaces=false}
  
       \begin{figure}[H]
 	 \begin{center}
-	\input C2echelon %fichier généré par -> gnuplot aTrace
+	\includegraphics[scale=1]{C2echelon.pdf}
 	\caption{Réponse à un echelon de tension}
 	\end{center}
       \end{figure}
       
       \begin{figure}[H]
 	      \begin{center}
-		\input C2porte %fichier généré par -> gnuplot aTrace
+		\includegraphics[scale=1]{C2porte.pdf}
 		\caption{Réponse à une porte}
 	      \end{center}
 	    \end{figure}
 
       \begin{figure}[H]
 	      \begin{center}
-		\input C2carre %fichier généré par -> gnuplot aTrace
+		\includegraphics[scale=1]{C2carre.pdf}
 		\caption{Réponse à signal carré}
-	      \end{center}
-	    \end{figure}
-
-      \begin{figure}[H]
-	      \begin{center}
-		\input C2triangle %fichier généré par -> gnuplot aTrace
-		\caption{Réponse à signal triangle}
 	      \end{center}
 	    \end{figure}
 
