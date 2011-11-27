@@ -7,25 +7,54 @@
 #define DEF_circuits
 #include "sources.h"
 
-/* Classe "euler" pour la resolution de au'+bu=f. */
+/* Classe "euler"*/
 class euler{
 	protected:
-		double a,b,ci,pas,duree,u,up,t ; 
+		double pas,duree,t ; 
 		source *generateur;
 	public:
 		euler();
+		virtual void diffSolve()=0;
+		virtual void circuitSolve() =0;
+};
+
+/* Classe "euler1" pour la resolution de au'+bu=f. */
+class euler1 : public euler{
+	protected:
+		double u,up,ci,a,b ;
+	public:
+		euler1();
 		void diffSolve();
 		virtual void circuitSolve() =0;
 };
 
+/* Classe "Euler 2 pour la resolution de u''=au'+bu+f */
+
+class euler2 :public euler{
+	protected:
+		double a,b,ci1,ci2,u1,u1p,u2,u2p ; 
+	public:
+		euler2();
+		void diffSolve();
+		void circuitSolve();
+};
+
+
+
 /* Classe "exemple1". */
-class exemple1 : public euler{
+class exemple1 : public euler1{
 	public:
 		exemple1();
 };
 
+/* Classe "exemple2". */
+class exemple2 : public euler2{
+	public:
+		exemple2();
+};
+
 /* Classe "circuit" (permet le choix de la source) */
-class circuit : public euler{
+class circuit : public euler1{
 	public:
 		circuit();
 };

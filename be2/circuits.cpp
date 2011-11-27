@@ -10,21 +10,26 @@
 using namespace std;
 
 euler::euler(){
-	a=0.0;
-	b=0.0;
-	ci=0.0;
 	pas=0.1;
 	duree=10.0;
-	u=0.0;
-	up=0.0;
 	t=0.0;
 }
 
-void euler::diffSolve(){
+euler1::euler1(){
+	a=0.0;
+	b=0.0;
+	ci=0.0;
+	u=0.0;
+	up=0.0;
+}
+
+void euler1::diffSolve(){
 		up=u;
 		u=(pas/a)*(generateur->Esm(t)+up*(-b+a/pas));
 		t=t+pas;
 }
+
+
 
 exemple1::exemple1(){   //Cas special de l'exercice 1
 	a=1;
@@ -138,4 +143,44 @@ void circuitB::circuitSolve(){
 		vd=generateur->E(t)-u-Rd*C*(u-up)/pas+u/R;
 		cout << t << "   " << generateur->E(t) <<"   " << u << "   " << vd << endl;
 	}	
+}
+
+/*Classe Euler d'odre 2 de la forme u''=au'+bu+ft */
+euler2::euler2(){ 
+	a=0.0;
+	b=0.0;
+	ci1=0.0;
+	ci2=0.0;
+	u1=0.0;
+	u1p=0.0;
+	u2=0.0;
+	u2p=0.0;
+	
+}
+/*Resolution de u''=au'+bu+ft */
+void euler2::diffSolve(){
+		u1p=u1;
+		u2p=u2;
+		u1=u1p+pas*u2p;
+		u2=u2p+pas*(b*u1p+a*u2p+generateur->Esm(t));
+		t=t+pas;
+}
+
+
+void euler2::circuitSolve(){
+		cout << "#Temps" << "   " << "ESM" <<"   " << "Vs" << "   " << endl;
+		u1=ci1;
+		u2=ci2;
+	while(t<=	duree){
+		diffSolve();
+		cout << t << "   " << generateur->Esm(t) <<"   " << u1 << endl;
+	}	
+}
+/*Resolution de l'exemple n2 */
+exemple2::exemple2(){   //Cas special de l'exercice 2
+	a=0.0;
+	b=-1.0;
+	ci2=1;
+	generateur = new echelon;	//on favrique un echelon null
+	generateur->setAB(0,0); //second membre nul ds ce cas
 }
