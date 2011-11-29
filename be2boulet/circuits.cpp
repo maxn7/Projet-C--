@@ -16,13 +16,6 @@ euler::euler(){
 }
 
 
-
-exemple1::exemple1(){   //Cas special de l'exercice 1
-	a=1;
-	b=3;
-	generateur = new fctExo1;	
-}
-
 /* Choix de la source lors de la creation d'un circuit. */
 circuit::circuit(){
 	int choix=0;
@@ -37,6 +30,8 @@ circuit::circuit(){
 		cout << "#2 - Porte" << endl;
 		cout << "#3 - Carre" << endl;
 		cout << "#4 - Triangle" << endl;
+		cout << "#5 - Rampe f(t)=-3*t (Exemple1)" << endl;
+		cout << "#6 - Nulle (Exemple 2)" << endl;
 		cin >> choix;
 
 		switch(choix){
@@ -52,6 +47,13 @@ circuit::circuit(){
 		case 4:
 			generateur=new triangle;
 		    break;		
+		case 5:
+			generateur=new fctExo1;
+		    break;	
+		case 6:
+			generateur=new echelon;
+			generateur->setAB(0,0);
+		    break;	
 		default:
 			break;	
 		}
@@ -63,6 +65,21 @@ void circuit1::diffSolve(){
 		u=(pas/a)*(generateur->Esm(t)+up*(-b+a/pas));
 		t=t+pas;
 }
+
+exemple1::exemple1(){   //Cas special de l'exercice 1
+	a=1;
+	b=3;
+	ci = 0;	
+}
+
+void exemple1::circuitSolve(){
+		cout << "#Temps" << "   " << "SolEuler" <<"   " << "SolExacte" << "   " << endl;
+	while(t<=	duree){
+		diffSolve();
+		cout << t << "   " << u <<"   " << -(1/3)*exp(-3*t) -t + (1/3) << endl;
+	}	
+}
+
 
 /* Circuit A avec comme paramètres R et C */
 circuitA::circuitA(){
@@ -160,12 +177,12 @@ void circuit2::circuitSolve(){
 			cout << t << "   " << generateur->Esm(t) <<"   " << u << endl;
 		}	
 }
+
 /*Resolution de l'exemple n2 */
 exemple2::exemple2(){   //Cas special de l'exercice 2
 	a=0.0;
 	b=-1.0;
 	ci2=1;
-	generateur->setAB(0,0); //second membre nul ds ce cas
 }
 
 void exemple2::diffSolve(){
@@ -175,6 +192,17 @@ void exemple2::diffSolve(){
 		u2=u2p+pas*(b*up+a*u2p+generateur->Esm(t));
 		t=t+pas;
 }
+
+void exemple2::circuitSolve(){
+		cout << "#Temps" << "   " << "SolEuler" <<"   " << "SolReelle" << "   " << endl;
+		u=ci;
+		u2=ci2;
+		while(t<=duree){
+			diffSolve();
+			cout << t << "   " << u <<"   " << sin(t) << endl;
+		}	
+}
+
 /*Constructeur du circuitC*/
 circuitC::circuitC(){   //Cas special de l'exercice 2
 	cout << "#Valeur de R (Ohm) : " << endl;
