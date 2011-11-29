@@ -13,14 +13,18 @@ euler::euler(){
 	pas=0.1;
 	duree=10.0;
 	t=0.0;
-}
-
-euler1::euler1(){
-	a=0.0;
+	a=0.0; //ordre1
 	b=0.0;
 	ci=0.0;
 	u=0.0;
 	up=0.0;
+	ci2=0.0;//ordre2
+	u2p=0.0;
+	u2=0.0;
+}
+
+euler1::euler1(){
+	
 }
 
 void euler1::diffSolve(){
@@ -146,34 +150,25 @@ void circuitB::circuitSolve(){
 }
 
 /*Classe Euler d'odre 2 de la forme u''=au'+bu+ft */
-euler2::euler2(){ 
-	a=0.0;
-	b=0.0;
-	ci1=0.0;
-	ci2=0.0;
-	u1=0.0;
-	u1p=0.0;
-	u2=0.0;
-	u2p=0.0;
-	
+euler2::euler2(){
 }
 /*Resolution de u''=au'+bu+ft */
 void euler2::diffSolve(){
-		u1p=u1;
+		up=u;
 		u2p=u2;
-		u1=u1p+pas*u2p;
-		u2=u2p+pas*(b*u1p+a*u2p+generateur->Esm(t));
+		u=up+pas*u2p;
+		u2=u2p+pas*(b*up+a*u2p+generateur->Esm(t));
 		t=t+pas;
 }
 
 
 void euler2::circuitSolve(){
 		cout << "#Temps" << "   " << "ESM" <<"   " << "Vs" << "   " << endl;
-		u1=ci1;
+		u=ci;
 		u2=ci2;
 	while(t<=	duree){
 		diffSolve();
-		cout << t << "   " << generateur->Esm(t) <<"   " << u1 << endl;
+		cout << t << "   " << generateur->Esm(t) <<"   " << u << endl;
 	}	
 }
 /*Resolution de l'exemple n2 */

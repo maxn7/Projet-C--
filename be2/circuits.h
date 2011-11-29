@@ -10,7 +10,7 @@
 /* Classe "euler"*/
 class euler{
 	protected:
-		double pas,duree,t ; 
+		double pas,duree,t,a,b,ci,ci2,u,up,u2,u2p ; 
 		source *generateur;
 	public:
 		euler();
@@ -21,7 +21,7 @@ class euler{
 /* Classe "euler1" pour la resolution de au'+bu=f. */
 class euler1 : public euler{
 	protected:
-		double u,up,ci,a,b ;
+		
 	public:
 		euler1();
 		void diffSolve();
@@ -32,7 +32,7 @@ class euler1 : public euler{
 
 class euler2 :public euler{
 	protected:
-		double a,b,ci1,ci2,u1,u1p,u2,u2p ; 
+		
 	public:
 		euler2();
 		void diffSolve();
