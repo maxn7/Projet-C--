@@ -22,8 +22,10 @@ source::source(){
 
 double source::Esm(double t) // Transformation affine du signal de la source
 {
-	return A*E(t)+B ;
+	return A*E(t)+B;
 }
+
+
 
 /* Definitions des sources filles pour differents types de signaux ou fonctions. */
 
@@ -37,6 +39,7 @@ void source::setAB(double Ai, double Bi)
 	A = Ai;
 	B = Bi;
 }
+
 
 double echelon::E(double t){
 	double fx;

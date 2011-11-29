@@ -10,21 +10,12 @@
 using namespace std;
 
 euler::euler(){
-	a=0.0;
-	b=0.0;
-	ci=0.0;
 	pas=0.1;
 	duree=10.0;
-	u=0.0;
-	up=0.0;
 	t=0.0;
 }
 
-void euler::diffSolve(){
-		up=u;
-		u=(pas/a)*(generateur->Esm(t)+up*(-b+a/pas));
-		t=t+pas;
-}
+
 
 exemple1::exemple1(){   //Cas special de l'exercice 1
 	a=1;
@@ -35,6 +26,11 @@ exemple1::exemple1(){   //Cas special de l'exercice 1
 /* Choix de la source lors de la creation d'un circuit. */
 circuit::circuit(){
 	int choix=0;
+	a=0.0;
+	b=0.0;
+	ci=0.0;
+	u=0.0;
+	up=0.0;
 	
 		cout << "#Choisir la source ?" << endl;
 		cout << "#1 - Echelon" << endl;
@@ -59,6 +55,13 @@ circuit::circuit(){
 		default:
 			break;	
 		}
+		
+}
+
+void circuit1::diffSolve(){
+		up=u;
+		u=(pas/a)*(generateur->Esm(t)+up*(-b+a/pas));
+		t=t+pas;
 }
 
 /* Circuit A avec comme paramètres R et C */
@@ -138,4 +141,77 @@ void circuitB::circuitSolve(){
 		vd=generateur->E(t)-u-Rd*C*(u-up)/pas+u/R;
 		cout << t << "   " << generateur->E(t) <<"   " << u << "   " << vd << endl;
 	}	
+}
+/*Ciruit 2 ordre*/
+
+circuit2::circuit2(){
+	u2=0.0;
+	u2p=0.0;
+	ci2=0;
+	
+}
+
+void circuit2::circuitSolve(){
+		cout << "#Temps" << "   " << "ESM" <<"   " << "Vs" << "   " << endl;
+		u=ci;
+		u2=ci2;
+		while(t<=duree){
+			diffSolve();
+			cout << t << "   " << generateur->Esm(t) <<"   " << u << endl;
+		}	
+}
+/*Resolution de l'exemple n2 */
+exemple2::exemple2(){   //Cas special de l'exercice 2
+	a=0.0;
+	b=-1.0;
+	ci2=1;
+	generateur->setAB(0,0); //second membre nul ds ce cas
+}
+
+void exemple2::diffSolve(){
+		up=u;
+		u2p=u2;
+		u=up+pas*u2p;
+		u2=u2p+pas*(b*up+a*u2p+generateur->Esm(t));
+		t=t+pas;
+}
+/*Constructeur du circuitC*/
+circuitC::circuitC(){   //Cas special de l'exercice 2
+	cout << "#Valeur de R (Ohm) : " << endl;
+	cin >> R ;
+	cout << "#Valeur de L (Henry) : " << endl;
+	cin >> L ;
+	cout << "#Valeur de C (Farad) : " << endl ;
+	cin >> C ;		
+	
+	a=-R/L;
+	b=-1/(L*C);
+	ci=0.0;
+	ci2=0.0;
+	
+	generateur->setAB(1,0); 
+}
+
+circuitD::circuitD(){  
+	cout << "#Valeur de R (Ohm) : " << endl;
+	cin >> R ;
+	cout << "#Valeur de L (Henry) : " << endl;
+	cin >> L ;
+	cout << "#Valeur de C (Farad) : " << endl ;
+	cin >> C ;		
+	
+	a=-1/(R*C);
+	b=-1/(L*C);
+	ci=0.0;
+	ci2=0.0;
+	
+	generateur->setAB(-a,0); 
+}
+
+void circuitD::diffSolve(){
+		up=u;
+		u2p=u2;
+		u=up+pas*u2p;
+		u2=u2p+pas*(b*up+a*u2p)+(generateur->Esm(t)-generateur->Esm(t-pas)); //on code la derivé de la fct second membre
+		t=t+pas;
 }

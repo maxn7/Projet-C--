@@ -12,9 +12,10 @@ using namespace std;
 
 int main(int argc, char **argv)
 {	
+	
 	cout.width(6);
 	cout.precision(4);
-	
+	/*
 	circuit * montage;
 	int choix=0;
 	
@@ -37,7 +38,9 @@ int main(int argc, char **argv)
 			
 			
 	montage->circuitSolve();
-	
+	*/
+	circuitD test;
+	test.circuitSolve();
 	return 0;
 }
 

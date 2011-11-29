@@ -10,28 +10,41 @@
 /* Classe "euler" pour la resolution de au'+bu=f. */
 class euler{
 	protected:
-		double a,b,ci,pas,duree,u,up,t ; 
+		double pas,duree,t ; 
 		source *generateur;
 	public:
 		euler();
+		virtual void diffSolve()=0;
+		virtual void circuitSolve()=0;
+};
+
+
+/* Classe "circuit" (permet le choix de la source) */
+class circuit : public euler{
+	protected:
+		double a,b,ci,u,up;
+	public:
+		circuit();
+		virtual void diffSolve()=0;
+		virtual void circuitSolve()=0;
+};
+
+/* Classe "circuit1" (1ordre) */
+class circuit1 : public circuit{		
+	public:
 		void diffSolve();
-		virtual void circuitSolve() =0;
+		virtual void circuitSolve() =0; //définit en fct du circuit 
 };
 
 /* Classe "exemple1". */
-class exemple1 : public euler{
+class exemple1 : public circuit1{
 	public:
 		exemple1();
 };
 
-/* Classe "circuit" (permet le choix de la source) */
-class circuit : public euler{
-	public:
-		circuit();
-};
 
 /* Classe "circuitA". */
-class circuitA : public circuit{
+class circuitA : public circuit1{
 	protected:
 		double R,C;
 	public:
@@ -40,12 +53,45 @@ class circuitA : public circuit{
 };
 
 /* Classe "circuitB". */
-class circuitB : public circuit{
+class circuitB : public circuit1{
 	protected:
 		double Rd,C,R;
 	public:
 		circuitB();
 		void circuitSolve();
+};
+
+/* Classe "circuit2" (2Ordre)*/ 
+class circuit2 : public circuit{
+	protected:
+		double ci2,u2,u2p;
+	public:
+		circuit2();
+		 virtual void diffSolve()=0;
+		 void circuitSolve();
+};
+/* Classe "exemple2" (2Ordre)*/ 
+class exemple2 : public circuit2{
+	public:
+		exemple2();	
+		void diffSolve();	
+};
+
+/* Classe "circuitC". */
+class circuitC : public exemple2{
+	protected:
+		double R,C,L;
+	public:
+		circuitC();
+};
+
+/* Classe "circuitD". */
+class circuitD : public circuit2{
+	protected:
+		double R,C,L;
+	public:
+		circuitD();
+		void diffSolve();
 };
 
 #endif
