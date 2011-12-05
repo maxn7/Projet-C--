@@ -33,7 +33,7 @@ class circuit : public euler{
 class circuit1 : public circuit{		
 	public:
 		void diffSolve();
-		virtual void circuitSolve() =0; //défini en fct du circuit 
+		virtual void circuitSolve() =0; //defini en fct du circuit 
 };
 
 /* Classe "exemple1". */
@@ -76,7 +76,7 @@ class exemple2 : public circuit2{
 	public:
 		exemple2();	
 		void diffSolve();
-		void circuitSolve(); //Redéfinition pour les besoins de l'exemple	
+		void circuitSolve(); //Redefinition pour les besoins de l'exemple	
 };
 
 /* Classe "circuitC". */

@@ -1,4 +1,4 @@
-/* Programmation ortientée objet : BE2 */
+/* Programmation ortientee objet : BE2 */
 /* Jeremie Fourmann et Maxime Morin    */
 /* sources.h                           */
 /* Declaration des classes sources     */

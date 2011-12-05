@@ -50,8 +50,8 @@ circuit::circuit(){
 			generateur=new fctExo1;
 		    break;	
 		case 6:
-			generateur=new echelon; /* Générateur quelconque. */
-			generateur->setAB(0,0); /* Coupe le générateur. */
+			generateur=new echelon; /* Generateur quelconque. */
+			generateur->setAB(0,0); /* Coupe le generateur. */
 		    break;	
 		default:
 			break;	
@@ -65,7 +65,7 @@ void circuit1::diffSolve(){
 		t=t+pas;
 }
 
-exemple1::exemple1(){   //Cas "mathématique" de l'exercice 1
+exemple1::exemple1(){   //Cas "mathematique" de l'exercice 1
 	a=1;
 	b=3;
 	ci = 0;	
