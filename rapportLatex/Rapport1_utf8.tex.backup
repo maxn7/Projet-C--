@@ -104,6 +104,7 @@ showstringspaces=false}
 
 \section{Résultats}
   \subsection{Réponse du l'exemple 1}
+<<<<<<< HEAD
   \subsection{Réponses du CircuitA}
 
 \begin{circuitikz} \draw
@@ -119,11 +120,89 @@ showstringspaces=false}
  
    
     
+=======
+
+\newpage
+  \subsection{Réponse du CircuitA}
+\begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CAechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CAporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CAcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CAtriangle.pdf}
+   \end{minipage}\\
+ \caption{Réponse du circuit A}
+\end{figure}
+
+\newpage
+  \subsection{Réponse du CircuitB}
+
+  \begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CBechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CBporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CBcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CBtriangle.pdf}
+   \end{minipage}\\
+ \caption{ Réponse du circuit B}
+\end{figure}
+\newpage
+>>>>>>> d359d65d8ba97df336818853ecaa666b48a20d52
   \subsection{Réponse du CircuitC}
+
+  \begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CCechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CCporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CCcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CCtriangle.pdf}
+   \end{minipage}\\
+ \caption{Réponse du circuit C}
+\end{figure}
+
+\newpage
   \subsection{Réponse du CircuitD}
 
-  \appendix
+\begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CDechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CDporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CDcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CDtriangle.pdf}
+   \end{minipage}\\
+ \caption{Réponse du circuit D}
+\end{figure}
+
+
+
+
   \newpage
+  \appendix
+  
   \section{main.cpp}
     \lstinputlisting{../main.cpp}
     \newpage
