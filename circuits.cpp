@@ -10,8 +10,8 @@
 using namespace std;
 
 euler::euler(){
-	pas=0.1;
-	duree=10.0;
+	pas=0.01;
+	duree=10;
 	t=0.0;
 }
 
@@ -194,12 +194,12 @@ void exemple2::diffSolve(){
 }
 
 void exemple2::circuitSolve(){
-		cout << "#Temps" << "   " << "SolEuler" <<"   " << "SolReelle" << "   " << endl;
+		cout << "#Temps" << "   " << "Entree" <<"   " << "Sortie-Solution" <<"   " << "Sinus(sol exact)" << "   " << endl;
 		u=ci;
 		u2=ci2;
 		while(t<=duree){
 			diffSolve();
-			cout << t << "   " << u <<"   " << sin(t) << endl;
+			cout << t << "   " << generateur->Esm(t) <<"   " << u << "   " <<  sin(t) << endl;
 		}	
 }
 
