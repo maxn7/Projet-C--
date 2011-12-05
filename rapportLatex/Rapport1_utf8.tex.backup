@@ -12,6 +12,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathrsfs}
+\usepackage{epsfig}
 \usepackage {eurosym}
 
 \usepackage{float}
@@ -29,8 +30,9 @@
 
 
 \lstset{language=C++,
-%basicstyle=\ttfamily,
-keywordstyle=\color{blue}\bfseries,
+basicstyle=\ttfamily\footnotesize,
+breaklines, 
+keywordstyle=\bfseries\color{blue},
 stringstyle=\color{red},
 commentstyle=\color{blue!20!black!30!green},
 morecomment=[s][\color{black}]{/**}{*/},
@@ -58,6 +60,8 @@ showstringspaces=false}
 %\textsc{ddd dddd} (Promo - departement - respo)     %2 nom
 }
 
+\graphicspath{{images/}}
+
 \begin{document}
 
 \pagestyle{plain}
@@ -84,22 +88,16 @@ showstringspaces=false}
 	\caption{Hièrarchie de la classe circuit}
 	\end{center}
       \end{figure}
-\section{Code Source}
-  \subsection{main.cpp}
-    \lstinputlisting{../main.cpp}
-    \newpage
-  \subsection{circuits.h}
-    \lstinputlisting{../circuits.h}
-    \newpage
-  \subsection{circuits.cpp}
-    \lstinputlisting{../circuits.cpp}
-    \newpage
-   \subsection{sources.h}
-    \lstinputlisting{../sources.h}
-    \newpage
-   \subsection{sources.cpp}
-    \lstinputlisting{../sources.cpp}
-    \newpage
+
+  \subsection{L'objet source}
+    \begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=.7]{sourceDiagram}
+	\caption{Hièrarchie de la classe source}
+	\end{center}
+      \end{figure}
+\newpage
+
 
 \section{Résultats}
   \subsection{Réponse du l'exemple 1}
@@ -108,32 +106,51 @@ showstringspaces=false}
  
       \begin{figure}[H]
 	 \begin{center}
-	\input C2echelon %fichier généré par -> gnuplot aTrace
+	\includegraphics[scale=1]{C2echelon.pdf}
 	\caption{Réponse à un echelon de tension}
 	\end{center}
       \end{figure}
       
       \begin{figure}[H]
 	      \begin{center}
-		\input C2porte %fichier généré par -> gnuplot aTrace
+		\includegraphics[scale=1]{C2porte.pdf}
 		\caption{Réponse à une porte}
 	      \end{center}
 	    \end{figure}
 
       \begin{figure}[H]
 	      \begin{center}
-		\input C2carre %fichier généré par -> gnuplot aTrace
+		\includegraphics[scale=1]{C2carre.pdf}
 		\caption{Réponse à signal carré}
 	      \end{center}
 	    \end{figure}
 
       \begin{figure}[H]
 	      \begin{center}
-		\input C2triangle %fichier généré par -> gnuplot aTrace
+		 \includegraphics[scale=1]{C2triangle.pdf}%fichier généré par -> gnuplot aTrace
 		\caption{Réponse à signal triangle}
 	      \end{center}
 	    \end{figure}
     
   \subsection{Réponse du CircuitC}
   \subsection{Réponse du CircuitD}
+
+  \appendix
+  \newpage
+  \section{main.cpp}
+    \lstinputlisting{../main.cpp}
+    \newpage
+  \section{circuits.h}
+    \lstinputlisting{../circuits.h}
+    \newpage
+  \section{circuits.cpp}
+    \lstinputlisting{../circuits.cpp}
+    \newpage
+   \section{sources.h}
+    \lstinputlisting{../sources.h}
+    \newpage
+   \section{sources.cpp}
+    \lstinputlisting{../sources.cpp}
+    \newpage
+
 \end{document}

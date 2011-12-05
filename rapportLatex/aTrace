@@ -16,6 +16,7 @@ set output "images/exemple2.pdf"
 plot "../plot/exemple2.dat" using 1:3 title "Résulution numérique" with lines linewidth a,"../plot/exemple2.dat" using 1:4 title "Solution analytique" with lines linewidth a 
 unset output
 
+set xrange[0:10]
 
 set xlabel "Temps (secondes)"
 set ylabel "Tension (Volts)"

@@ -12,11 +12,12 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathrsfs}
+\usepackage{epsfig}
 \usepackage {eurosym}
 
 \usepackage{float}
 
-\geometry{a4paper,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1.5cm,headheight=2.2cm,headsep=0.5cm,footskip=1cm}
+\geometry{a4paper,tmargin=2cm,bmargin=2cm,lmargin=1.5cm,rmargin=1cm,headheight=2.2cm,headsep=0.5cm,footskip=1cm}
 \columnsep=0.6cm
 
 \graphicspath{{images/}} 
@@ -29,7 +30,7 @@
 
 
 \lstset{language=C++,
-basicstyle=\ttfamil\footnotesize,
+basicstyle=\ttfamily\footnotesize,
 breaklines, 
 keywordstyle=\bfseries\color{blue},
 stringstyle=\color{red},
@@ -96,26 +97,22 @@ showstringspaces=false}
 	\end{center}
       \end{figure}
 \newpage
-\section{Code Source}
-  \subsection{main.cpp}
-    \lstinputlisting{../main.cpp}
-    \newpage
-  \subsection{circuits.h}
-    \lstinputlisting{../circuits.h}
-    \newpage
-  \subsection{circuits.cpp}
-    \lstinputlisting{../circuits.cpp}
-    \newpage
-   \subsection{sources.h}
-    \lstinputlisting{../sources.h}
-    \newpage
-   \subsection{sources.cpp}
-    \lstinputlisting{../sources.cpp}
-    \newpage
+
 
 \section{Résultats}
   \subsection{Réponse du l'exemple 1}
   \subsection{Réponse du CircuitA}
+
+\begin{figure}
+\centering
+\begin{tabular}{cc}
+\epsfig{file=images/CAechelon.pdf,width=0.45\linewidth,clip=} & 
+\epsfig{file=images/CAporte.pdf,width=0.45\linewidth,clip=} \\
+\epsfig{file=images/CAcarre.pdf,width=0.45\linewidth,clip=} &
+\epsfig{file=images/CAtriangle.pdf,width=0.45\linewidth,clip=}
+\end{tabular}
+\end{figure}
+
   \subsection{Réponse du CircuitB}
  
       \begin{figure}[H]
@@ -148,4 +145,23 @@ showstringspaces=false}
     
   \subsection{Réponse du CircuitC}
   \subsection{Réponse du CircuitD}
+
+  \appendix
+  \newpage
+  \section{main.cpp}
+    \lstinputlisting{../main.cpp}
+    \newpage
+  \section{circuits.h}
+    \lstinputlisting{../circuits.h}
+    \newpage
+  \section{circuits.cpp}
+    \lstinputlisting{../circuits.cpp}
+    \newpage
+   \section{sources.h}
+    \lstinputlisting{../sources.h}
+    \newpage
+   \section{sources.cpp}
+    \lstinputlisting{../sources.cpp}
+    \newpage
+
 \end{document}
