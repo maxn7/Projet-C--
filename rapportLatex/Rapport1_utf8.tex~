@@ -84,7 +84,7 @@ showstringspaces=false}
   \subsection{L'objet circuit}
     \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{circuitDiagram}
+	  \includegraphics[scale=.7]{circuitDiagram}
 	\caption{Hièrarchie de la classe circuit}
 	\end{center}
       \end{figure}
@@ -100,54 +100,130 @@ showstringspaces=false}
 
 
 \section{Résultats}
-  \subsection{Réponse du l'exemple 1}
-  \subsection{Réponse du CircuitA}
+  \subsection{Exemple 1}
+Résolution de l'équation différentielle du 1\ier ordre :
+\begin{equation*}
+ \left \{
+  \begin{array}{c @{=} l}
+    u'(t) & -3\cdot u(t)-3\cdot t
+\\
+   u(0) & 0
+  \end{array}
+\right.
+\end{equation*} 
 
-\begin{figure}
-\centering
-\begin{tabular}{cc}
-\epsfig{file=images/CAechelon.pdf,width=0.45\linewidth,clip=} & 
-\epsfig{file=images/CAporte.pdf,width=0.45\linewidth,clip=} \\
-\epsfig{file=images/CAcarre.pdf,width=0.45\linewidth,clip=} &
-\epsfig{file=images/CAtriangle.pdf,width=0.45\linewidth,clip=}
-\end{tabular}
-\end{figure}
-
-  \subsection{Réponse du CircuitB}
- 
-      \begin{figure}[H]
+La solution exacte étant $u(t)=-1/3\cdot exp(-3t)-1/3$
+  \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=1]{C2echelon.pdf}
-	\caption{Réponse à un echelon de tension}
+	\includegraphics[scale=1]{exemple1}
+	\caption{Solution de l'exemple 1}
 	\end{center}
       \end{figure}
-      
-      \begin{figure}[H]
-	      \begin{center}
-		\includegraphics[scale=1]{C2porte.pdf}
-		\caption{Réponse à une porte}
-	      \end{center}
-	    \end{figure}
+\subsection{Exemple 2}
+Résolution de l'équation différentielle du 1\ier ordre :
+\begin{equation*}
+ \left \{
+  \begin{array}{c @{=} l}
+    u''(t) & -\lambda \cdot u(t) 
+\\
+   u(0) & 0
+\\
+  u'(0)&1
+  \end{array}
+\right.
+\end{equation*} 
 
-      \begin{figure}[H]
-	      \begin{center}
-		\includegraphics[scale=1]{C2carre.pdf}
-		\caption{Réponse à signal carré}
-	      \end{center}
-	    \end{figure}
+La solution exacte étant $u(t)=sin(t)$
 
-      \begin{figure}[H]
-	      \begin{center}
-		 \includegraphics[scale=1]{C2triangle.pdf}%fichier généré par -> gnuplot aTrace
-		\caption{Réponse à signal triangle}
-	      \end{center}
-	    \end{figure}
-    
+  \begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=1]{exemple2}
+	\caption{Solution de l'exemple 2}
+	\end{center}
+      \end{figure}
+
+\newpage
+
+
+  \subsection{Réponse du CircuitA}
+\begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CAechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CAporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CAcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CAtriangle.pdf}
+   \end{minipage}\\
+ \caption{Réponse du circuit A}
+\end{figure}
+
+\newpage
+  \subsection{Réponse du CircuitB}
+
+  \begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CBechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CBporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CBcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CBtriangle.pdf}
+   \end{minipage}\\
+ \caption{ Réponse du circuit B}
+\end{figure}
+\newpage
   \subsection{Réponse du CircuitC}
+
+  \begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CCechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CCporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CCcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CCtriangle.pdf}
+   \end{minipage}\\
+ \caption{Réponse du circuit C}
+\end{figure}
+
+\newpage
   \subsection{Réponse du CircuitD}
 
-  \appendix
+\begin{figure}[h!]
+   \begin{minipage}[b]{0.5\linewidth}
+      \centering \includegraphics[scale=0.68]{CDechelon.pdf}
+   \end{minipage}\hfill
+   \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CDporte.pdf}
+   \end{minipage}\\
+    \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CDcarre.pdf}
+   \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}   
+      \centering \includegraphics[scale=.68]{CDtriangle.pdf}
+   \end{minipage}\\
+ \caption{Réponse du circuit D}
+\end{figure}
+
+
+
+
   \newpage
+  \appendix
+  
   \section{main.cpp}
     \lstinputlisting{../main.cpp}
     \newpage
