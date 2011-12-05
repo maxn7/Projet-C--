@@ -26,6 +26,10 @@
 \usepackage{color}
 \usepackage{xcolor}
 
+\usepackage{tikz}
+\usepackage[symbols]{circuitikz}
+\usepackage{siunitx}
+
 \lstset{columns=flexible,keepspaces=true, breaklines,breakindent=0pt} 
 
 
@@ -84,7 +88,7 @@ showstringspaces=false}
   \subsection{L'objet circuit}
     \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{circuitDiagram}
+	  \includegraphics[scale=.7]{circuitDiagram}
 	\caption{Hièrarchie de la classe circuit}
 	\end{center}
       \end{figure}
@@ -101,47 +105,39 @@ showstringspaces=false}
 
 \section{Résultats}
   \subsection{Réponse du l'exemple 1}
-  \subsection{Réponse du CircuitA}
+  \subsection{Réponses du CircuitA}
 
-\begin{figure}
-\centering
-\begin{tabular}{cc}
-\epsfig{file=images/CAechelon.pdf,width=0.45\linewidth,clip=} & 
-\epsfig{file=images/CAporte.pdf,width=0.45\linewidth,clip=} \\
-\epsfig{file=images/CAcarre.pdf,width=0.45\linewidth,clip=} &
-\epsfig{file=images/CAtriangle.pdf,width=0.45\linewidth,clip=}
-\end{tabular}
-\end{figure}
+\begin{circuitikz} \draw
+ (1.5,0) node[ground] {}
+  (0,0) to [V, v=$E(t)$, <->,>=latex] (0,3) to [R, l=$R$] (3,3)
+  to [C, l=$C$, *-*] (3,0)
+ (3,0) -- (0,0)
+;\end{circuitikz}
+
+\begin{circuitikz} \draw
+ (0,0) node[anchor=east]{B}
+  to[short, o-*] (1,0)
+  to[R, l=$20\ohm$, *-*] (1,2)
+  to [R, v=$v_x$, l=$10\ohm$] (3,2)
+  to[short] (4,2) to[cI, i=$\frac{\siemens}{5}v_x$, *-*] (4,0)
+   to[short] (3,0) to[R, l=$5\ohm$, *-*] (3,2)
+ (3,0) -- (1,0)
+ (1,2) to[short, *-o] (0,2)
+  node[anchor=east]{A}
+;\end{circuitikz}
+
+\begin{circuitikz} \draw
+ (0,0) to[C, l=$10\micro\farad$] (0,2) -- (0,3)
+  to[R, l=$2.2\kilo\ohm$] (4,3) -- (4,2)
+  to[L, l=$12\milli\henry$, i=$i_1$] (4,0) -- (0,0)
+ (4,2) to[D*, *-*] (2,0) to [D*, -*] (0,2)
+  to[R, l=$1\kilo\ohm$] (2,2)   to[cV, v=$0.3\kilo\ohm i_1$] (4,2)
+ (2,0) to[I, i=$1\milli\ampere$:15, -*] (2,2)
+; \end{circuitikz} 
 
   \subsection{Réponse du CircuitB}
  
-      \begin{figure}[H]
-	 \begin{center}
-	\includegraphics[scale=1]{C2echelon.pdf}
-	\caption{Réponse à un echelon de tension}
-	\end{center}
-      \end{figure}
-      
-      \begin{figure}[H]
-	      \begin{center}
-		\includegraphics[scale=1]{C2porte.pdf}
-		\caption{Réponse à une porte}
-	      \end{center}
-	    \end{figure}
-
-      \begin{figure}[H]
-	      \begin{center}
-		\includegraphics[scale=1]{C2carre.pdf}
-		\caption{Réponse à signal carré}
-	      \end{center}
-	    \end{figure}
-
-      \begin{figure}[H]
-	      \begin{center}
-		 \includegraphics[scale=1]{C2triangle.pdf}%fichier généré par -> gnuplot aTrace
-		\caption{Réponse à signal triangle}
-	      \end{center}
-	    \end{figure}
+   
     
   \subsection{Réponse du CircuitC}
   \subsection{Réponse du CircuitD}

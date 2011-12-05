@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  5 DEC 2011 16:52
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.12)  5 DEC 2011 17:46
 entering extended mode
  %&-line parsing enabled.
 **Rapport1_utf8.tex
@@ -582,6 +582,435 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box33
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen130
+\pgf@y=\dimen131
+\pgf@xa=\dimen132
+\pgf@ya=\dimen133
+\pgf@xb=\dimen134
+\pgf@yb=\dimen135
+\pgf@xc=\dimen136
+\pgf@yc=\dimen137
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count122
+\c@pgf@countb=\count123
+\c@pgf@countc=\count124
+\c@pgf@countd=\count125
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count126
+\pgfsyssoftpath@bigbuffer@items=\count127
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen138
+\pgfmath@count=\count128
+\pgfmath@box=\box34
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count129
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen139
+\pgf@picmaxx=\dimen140
+\pgf@picminy=\dimen141
+\pgf@picmaxy=\dimen142
+\pgf@pathminx=\dimen143
+\pgf@pathmaxx=\dimen144
+\pgf@pathminy=\dimen145
+\pgf@pathmaxy=\dimen146
+\pgf@xx=\dimen147
+\pgf@xy=\dimen148
+\pgf@yx=\dimen149
+\pgf@yy=\dimen150
+\pgf@zx=\dimen151
+\pgf@zy=\dimen152
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen153
+\pgf@path@lasty=\dimen154
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen155
+\pgf@shorten@start@additional=\dimen156
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count130
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen157
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen158
+\pgf@pt@y=\dimen159
+\pgf@pt@temp=\dimen160
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen161
+\pgf@sys@shading@range@num=\count131
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box38
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box39
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen162
+\pgf@nodesepend=\dimen163
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen164
+\pgffor@skip=\dimen165
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count132
+\pgfplotmarksize=\dimen166
+)
+\tikz@lastx=\dimen167
+\tikz@lasty=\dimen168
+\tikz@lastxsaved=\dimen169
+\tikz@lastysaved=\dimen170
+\tikzleveldistance=\dimen171
+\tikzsiblingdistance=\dimen172
+\tikz@figbox=\box40
+\tikz@tempbox=\box41
+\tikztreelevel=\count133
+\tikznumberofchildren=\count134
+\tikznumberofcurrentchild=\count135
+\tikz@fig@count=\count136
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count137
+\pgfmatrixcurrentcolumn=\count138
+\pgf@matrix@numberofcolumns=\count139
+)
+\tikz@expandcount=\count140
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+))) (/usr/share/texmf-texlive/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2009/04/17 The CircuiTikz circuit drawing package version 0
+.2.1
+
+(/usr/share/texmf-texlive/tex/latex/xstring/xstring.sty
+(/usr/share/texmf-texlive/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count141
+\decimalpart=\count142
+)
+Package: xstring 2009/06/05 v1.5c String manipulations (C Tellechea)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.
+code.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
+)
+(/usr/share/texmf/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.p
+athmorphing.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen173
+\pgfdecoratedremainingdistance=\dimen174
+\pgfdecoratedinputsegmentcompleteddistance=\dimen175
+\pgfdecoratedinputsegmentremainingdistance=\dimen176
+\pgf@decorate@distancetomove=\dimen177
+\pgf@decorate@repeatstate=\count143
+\pgfdecorationsegmentamplitude=\dimen178
+\pgfdecorationsegmentlength=\dimen179
+))
+\pgf@circ@Rlen=\dimen180
+
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircutils.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircmath.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircshapes.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircmonopoles.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircbipoles.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcirctripoles.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircquadpoles.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcirclabel.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcircvoltage.sty)
+(/usr/share/texmf-texlive/tex/latex/circuitikz/pgfcirccurrent.sty)
+(/usr/share/texmf-texlive/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2009/09/21 v1.3a A comprehensive (SI) units package
+
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
+\XKV@depth=\count144
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen181
+\extrarowheight=\dimen182
+\NC@list=\toks38
+\extratabsurround=\skip55
+\backup@length=\skip56
+)
+(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+\si@tempboxa=\box42
+\si@tempboxb=\box43
+\si@tempboxc=\box44
+\si@tempboxd=\box45
+\si@temptoks=\toks39
+\si@tab@mantprecnt=\count145
+\si@tab@mantpostcnt=\count146
+\si@tab@expprecnt=\count147
+\si@tab@exppostcnt=\count148
+\si@num@dp=\count149
+\si@num@sf=\count150
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+\si@eVcorra=\skip57
+\si@eVcorrb=\skip58
+\si@frc@displen=\skip59
+\si@frc@textlen=\skip60
+\si@frc@suplen=\skip61
+\si@frc@ssuplen=\skip62
+\si@num@rndtarget=\count151
+\si@tab@toks=\toks40
+\si@tab@pretoks=\toks41
+\si@tab@posttoks=\toks42
+\si@tempcnta=\count152
+\si@tempcntb=\count153
+\si@tab@prebox=\box46
+\si@tab@midbox=\box47
+\si@tab@postbox=\box48
+\si@tab@expbox=\box49
+\si@tab@predim=\dimen183
+\si@tab@postdim=\dimen184
+\si@tab@expdim=\dimen185
+\si@tempdima=\dimen186
+\si@tempdimb=\dimen187
+\si@unt@unitcnta=\count154
+\si@unt@unitcntb=\count155
+\si@unt@depthcnt=\count156
+\si@unt@prefixcnt=\count157
+\si@unt@powerdim=\dimen188
+
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-prefix.cfg
+File: si-prefix.cfg 2009/09/21 v1.3a siunitx: SI Multiple prefixes
+Package siunitx Info: Redefining unit \kilogram on input line 46.
+)
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-named.cfg
+File: si-named.cfg 2009/09/21 v1.3a siunitx: SI Named units
+)
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-addn.cfg
+File: si-addn.cfg 2009/09/21 v1.3a siunitx: SI Additional units
+)
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-prefixed.cfg
+File: si-prefixed.cfg 2009/09/21 v1.3a siunitx: SI Prefixed units
+
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-accepted.cfg
+File: si-accepted.cfg 2009/09/21 v1.3a siunitx: SI Accepted units
+)
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-physical.cfg
+File: si-physical.cfg 2009/09/21 v1.3a siunitx: SI Physically-measured units
+))
+(/usr/share/texmf-texlive/tex/latex/siunitx/config/si-abbr.cfg
+File: si-abbr.cfg 2009/09/21 v1.3a siunitx: Abbreviated units
+))
+\pgf@circ@res@up=\dimen189
+\pgf@circ@res@down=\dimen190
+\pgf@circ@res@zero=\dimen191
+\pgf@circ@res@left=\dimen192
+\pgf@circ@res@right=\dimen193
+\pgf@circ@res@other=\dimen194
+\pgf@circ@res@step=\dimen195
+\pgfstartlinewidth=\dimen196
+)
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -593,35 +1022,42 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 ) (./Rapport1_utf8.aux)
 \openout1 = `Rapport1_utf8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Info: Redefining \degres on input line 65.
-LaTeX Info: Redefining \dots on input line 65.
-LaTeX Info: Redefining \up on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Info: Redefining \degres on input line 69.
+LaTeX Info: Redefining \dots on input line 69.
+LaTeX Info: Redefining \up on input line 69.
+
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen130
-\scratchbox=\box33
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen131
-\MPnumerator=\count126
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count158
+\scratchdimen=\dimen197
+\scratchbox=\box50
+\nofMPsegments=\count159
+\nofMParguments=\count160
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count161
+\MPscratchDim=\dimen198
+\MPnumerator=\count162
+\everyMPtoPDFconversion=\toks44
 )
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -664,41 +1100,46 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring ON on input line 65.
+Package hyperref Info: Link coloring ON on input line 69.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count127
+\c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
 
 (./Rapport1_utf8.out) (./Rapport1_utf8.out)
-\@outlinefile=\write3
-\openout3 = `Rapport1_utf8.out'.
+\@outlinefile=\write5
+\openout5 = `Rapport1_utf8.out'.
 
-\AtBeginShipoutBox=\box34
-\c@lstlisting=\count128
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+\AtBeginShipoutBox=\box51
+\c@lstlisting=\count164
+
+ABD: EveryShipout initializing macros
+Package siunitx Info: xfrac package unavailable
+(siunitx)             using `fraction=sfrac' will fall back on
+(siunitx)             nicefrac-like method on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 69.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) (./Rapport1_utf8.toc)
-\tf@toc=\write4
-\openout4 = `Rapport1_utf8.toc'.
+\tf@toc=\write6
+\openout6 = `Rapport1_utf8.toc'.
 
 
 [1
@@ -711,8 +1152,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87 	\includegraphics[scale=.7]{circuitDiagram}
-                                                
+l.91 	  \includegraphics[scale=.7]{circuitDiagram}
+                                                  
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
 Try typing  <return>  to proceed.
@@ -725,7 +1166,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 	\includegraphics[scale=.7]{sourceDiagram}
+l.99 	\includegraphics[scale=.7]{sourceDiagram}
                                                
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -737,139 +1178,29 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.99 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{
-figure.2}) has been already used, duplicate ignored
+l.103 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.99 \newpage
-             ]
+l.103 \newpage
+              ]
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+ [3]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 148.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 148.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CAechelon.pdf): PDF inclusion:
- found PDF version <1.5>, but at most version <1.4> allowed
-<images/CAechelon.pdf, id=99, 361.35pt x 216.81pt>
-File: images/CAechelon.pdf Graphic file (type pdf)
- <use images/CAechelon.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CAporte.pdf): PDF inclusion: f
-ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CAporte.pdf, id=102, 361.35pt x 216.81pt>
-File: images/CAporte.pdf Graphic file (type pdf)
- <use images/CAporte.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CAcarre.pdf): PDF inclusion: f
-ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CAcarre.pdf, id=105, 361.35pt x 216.81pt>
-File: images/CAcarre.pdf Graphic file (type pdf)
- <use images/CAcarre.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CAtriangle.pdf): PDF inclusion
-: found PDF version <1.5>, but at most version <1.4> allowed
-<images/CAtriangle.pdf, id=108, 361.35pt x 216.81pt>
-File: images/CAtriangle.pdf Graphic file (type pdf)
-
-<use images/CAtriangle.pdf>
-
-LaTeX Warning: File `C2echelon.pdf' not found on input line 120.
-
-
-! Package pdftex.def Error: File `C2echelon.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 	\includegraphics[scale=1]{C2echelon.pdf}
-                                               
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 120.
-
-(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
+ (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-
-LaTeX Warning: File `C2porte.pdf' not found on input line 127.
-
-
-! Package pdftex.def Error: File `C2porte.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.127 		\includegraphics[scale=1]{C2porte.pdf}
-                                              
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `C2carre.pdf' not found on input line 134.
-
-
-! Package pdftex.def Error: File `C2carre.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 		\includegraphics[scale=1]{C2carre.pdf}
-                                              
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.138 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.138 
-       <./images/CAechelon.pdf> <./images/CAporte.pdf> <./images/CAcarre.pdf> <
-./images/CAtriangle.pdf>]
-
-LaTeX Warning: File `C2triangle.pdf' not found on input line 141.
-
-
-! Package pdftex.def Error: File `C2triangle.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 		 \includegraphics[scale=1]{C2triangle.pdf}
-                                                  %fichier gÃ©nÃ©rÃ© par -> ...
-
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150   \newpage
-                pdfTeX warning (ext4): destination with the same identifier (na
-me{figure.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.150   \newpage
-                ]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 152.
- (../main.cpp
+(../main.cpp
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 7.
 
@@ -887,7 +1218,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [5] (../circuits.h [6]) [7] (../circuits.cpp [8]
+) [4] (../circuits.h [5]) [6] (../circuits.cpp [7]
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC¨ not set up for use with La
 TeX.
@@ -902,7 +1233,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[9] [10]
+[8] [9]
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC© not set up for use with La
 TeX.
@@ -917,29 +1248,33 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [11] (../sources.h) [12] (../sources.cpp [13]) [14] (./Rapport1_utf8.aux) ) 
+) [10] (../sources.h) [11] (../sources.cpp [12]) [13] (./Rapport1_utf8.aux) ) 
 Here is how much of TeX's memory you used:
- 9710 strings out of 493848
- 130834 string characters out of 1152822
- 667489 words of memory out of 3000000
- 12204 multiletter control sequences out of 15000+50000
- 20959 words of font info for 57 fonts, out of 3000000 for 9000
+ 22626 strings out of 493848
+ 406206 string characters out of 1152822
+ 957558 words of memory out of 3000000
+ 24838 multiletter control sequences out of 15000+50000
+ 26669 words of font info for 76 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,12n,58p,278b,1838s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,14n,97p,435b,1839s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/
-usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/font
-s/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Rapport1_utf8.pdf (14 pages, 372586 bytes).
+usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/font
+s/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on Rapport1_utf8.pdf (13 pages, 345587 bytes).
 PDF statistics:
- 888 PDF objects out of 1000 (max. 8388607)
- 565 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 853 PDF objects out of 1000 (max. 8388607)
+ 560 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
