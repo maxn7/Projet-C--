@@ -10,7 +10,7 @@
 using namespace std;
 
 
-/* Methodes de la classe mère "source". */
+/* Methodes de la classe mere "source". */
 source::source(){
 	T=2;
 	phi=1;

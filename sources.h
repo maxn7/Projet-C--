@@ -6,7 +6,7 @@
 #ifndef DEF_sources
 #define DEF_sources
 
-/* Classe mère : source. */ 
+/* Classe mere : source. */ 
 class source{ 
 
 	protected:
@@ -20,13 +20,13 @@ class source{
 		void setAB(double Ai, double Bi); //accesseur pour les valeurs A et B
 };
 
-/* Classe fille permettant de traîter l'exemple 1. */
+/* Classe fille permettant de traiter l'exemple 1. */
 class fctExo1 : public source{
 	public:
 		 double E(double t);
 };
 
-/* Classes filles pour les differnets signaux d'entree. */
+/* Classes filles pour les differents signaux d'entree. */
 class echelon : public source{
 	public:
 		 double E(double t);	 

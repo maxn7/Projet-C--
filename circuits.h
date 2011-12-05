@@ -29,11 +29,11 @@ class circuit : public euler{
 		virtual void circuitSolve()=0;
 };
 
-/* Classe "circuit1" (1ordre) */
+/* Classe "circuit1" (1er ordre) */
 class circuit1 : public circuit{		
 	public:
 		void diffSolve();
-		virtual void circuitSolve() =0; //dÃ©fini en fct du circuit 
+		virtual void circuitSolve() =0; //défini en fct du circuit 
 };
 
 /* Classe "exemple1". */
@@ -62,7 +62,7 @@ class circuitB : public circuit1{
 		void circuitSolve();
 };
 
-/* Classe "circuit2" (2Ordre)*/ 
+/* Classe "circuit2" (2eme Ordre)*/ 
 class circuit2 : public circuit{
 	protected:
 		double ci2,u2,u2p;
@@ -71,12 +71,12 @@ class circuit2 : public circuit{
 		 virtual void diffSolve()=0;
 		 virtual void circuitSolve();
 };
-/* Classe "exemple2" (2Ordre)*/ 
+/* Classe "exemple2" (2eme Ordre)*/ 
 class exemple2 : public circuit2{
 	public:
 		exemple2();	
 		void diffSolve();
-		void circuitSolve(); //RedÃ©finition pour les besoins de l'exemple	
+		void circuitSolve(); //Redéfinition pour les besoins de l'exemple	
 };
 
 /* Classe "circuitC". */

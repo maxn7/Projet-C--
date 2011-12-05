@@ -15,7 +15,6 @@ euler::euler(){
 	t=0.0;
 }
 
-
 /* Choix de la source lors de la creation d'un circuit. */
 circuit::circuit(){
 	int choix=0;
@@ -51,8 +50,8 @@ circuit::circuit(){
 			generateur=new fctExo1;
 		    break;	
 		case 6:
-			generateur=new echelon;
-			generateur->setAB(0,0);
+			generateur=new echelon; /* Générateur quelconque. */
+			generateur->setAB(0,0); /* Coupe le générateur. */
 		    break;	
 		default:
 			break;	
@@ -66,7 +65,7 @@ void circuit1::diffSolve(){
 		t=t+pas;
 }
 
-exemple1::exemple1(){   //Cas special de l'exercice 1
+exemple1::exemple1(){   //Cas "mathématique" de l'exercice 1
 	a=1;
 	b=3;
 	ci = 0;	
@@ -81,7 +80,7 @@ void exemple1::circuitSolve(){
 }
 
 
-/* Circuit A avec comme paramÃ¨tres R et C */
+/* Circuit A avec comme parametres R et C */
 circuitA::circuitA(){
 	cout << "#Choix des valeurs pour le circuit suivant :" << endl ;
 	cout << "#_____/\\/\\/\\____  " << endl ;
@@ -159,6 +158,7 @@ void circuitB::circuitSolve(){
 		cout << t << "   " << generateur->E(t) <<"   " << u << "   " << vd << endl;
 	}	
 }
+
 /*Ciruit 2 ordre*/
 
 circuit2::circuit2(){
@@ -178,8 +178,8 @@ void circuit2::circuitSolve(){
 		}	
 }
 
-/*Resolution de l'exemple n2 */
-exemple2::exemple2(){   //Cas special de l'exercice 2
+/*Resolution de l'exemple numero 2 */
+exemple2::exemple2(){   //Cas mathematique de l'exercice 2
 	a=0.0;
 	b=-1.0;
 	ci2=1;
