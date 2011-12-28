@@ -80,24 +80,81 @@ showstringspaces=false}
 %Objectif
 
 \section{Objectif}
+Nous devons réaliser un programme en C++ permetant de résoudre des équations différentielles du 1\ier et 2\ieme ordre à coefficients constants.\\
+Ce type d'équation se retrouve en électronique lors de la résolution de circuits RC, RLC. Nous allons utliser une méthode de résolution 
+numérique de type différence finis. Nous utliserons plus particulierement la méthode d'Euler.\\
+
+L'utilisateur du programme pourra via un terminal :
+\begin{itemize}
+ \item choisir le type de circuit (1 ou 2 ordre)
+ \item choisir les valeur de ces composants
+ \item choisir le type de source (c'est a dire le second membre de l'equation différentielle\\
+\end{itemize}
+
+\emph{Le pas de simulation et la durée son réglé par defaut, (mais il peuvent etre facilement modifiés).}\\
+
+Le programme affichera dans le terminal ou dans un fichier texte la solution numérique trouvée. Il sera alors possible de la tracer (voir annexe Gnuplot).\\
+
+Nous allons à présent détailler et expliquer la structure de notre programme et les choix que l'on a fait. Puis nous commenterons nos 
+résultat obtenus sur les divers circuits. 
+Une fois notre code opérationel nous essayerons d'étudier la méthode d'Euler plus en détaille (influence du pas sur l'erreur, convergence ...).\\
+En annexe nous détaillerons notre méthode pour tracé nos résultats via un script élementaire unix et l'utilitaire Gnuplot.
+\newpage
 \section{Organistion du code}
+  \subsection{Le concept général}
+  Nous utilisons principalement les notions de classe, héritage, polymorphysme .\\
+  En effet en fonction du type de circuit la méthode de
+  résolution n'est plus la meme, nous faisont apelle a la notion de polymorphysme pour résoudre se problème. Dans notre cas les fonctions 
+  circuitSolve() et diffsolve() auront plusieurs versions possible en fonction du circuit.
   \subsection{L'objet circuit}
     \begin{figure}[H]
 	 \begin{center}
-	  \includegraphics[scale=.7]{circuitDiagram}
+	  \includegraphics[scale=.5]{circuitDiagram}
 	\caption{Hièrarchie de la classe circuit}
 	\end{center}
       \end{figure}
+    \textbf{Les principales caractéristique de cet objet :}\\
+
+\noindent La classe Euler :
+\begin{itemize}
+ \item permet de définir les paramètres de simulation
+  \item 2 méthode circuitSolve() et diffSolve() en virtuelles qui permettrons la résolutions du problème en fonction de la classe instancièe
+\end{itemize}
+La classe Circuit :
+\begin{itemize}
+ \item Hérite d'Euler
+  \item Son constructeur permet le choix de la Source 
+\end{itemize}
+La classe Circuit1:
+\begin{itemize}
+ \item Hérite de circuit
+  \item définition de la fonction circuiSolve(),qui permet de calculer résoudre au'+bu=E  
+\end{itemize}
+La classe Circuit1:
+\begin{itemize}
+ \item Hérite de circuit
+  \item définition de la fonction circuiSolve(),qui permet de calculer résoudre au''+bu'+cu=E  \\
+\end{itemize}
+
+\noindent Les autres classe héritant de ces 2 dernières, permettent de résoudre les circuit A,B,C,D, nous avons essayé de relier les exemples dans le cas général en considérant 
+leurs seconds membres commes des sources particulières. \\
 
   \subsection{L'objet source}
     \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{sourceDiagram}
+	\includegraphics[scale=.5]{sourceDiagram}
 	\caption{Hièrarchie de la classe source}
 	\end{center}
       \end{figure}
-\newpage
 
+Les classe carré,échelon, ... héritent de la classe mère source. Elles définissent chacune une vesion de la fontion E(t) et règle certains
+attributs qui leurs sont propres comme l'amplitude, fréquences, offset ... .\\
+La fonction E(t) renvoit la valeur à l'instant t de la source. L'objet Circuit vat avoir comme attribut une source, car il en a besoin 
+lors de la résolution de l'equation différentielle.
+\subsection{Le main}
+Notre main permet à l'utilisateur de choisir son circuit, il cré donc un pointeur sur le circuit en question. Et il execute ensuite la methode d'affichage de la solution du 
+circuit qui est diffsolve().
+\newpage
 
 \section{Résultats}
   \subsection{Exemple 1}
@@ -115,7 +172,7 @@ Résolution de l'équation différentielle du 1\ier ordre :
 La solution exacte étant $u(t)=-1/3\cdot exp(-3t)-1/3$
   \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=1]{exemple1}
+	\includegraphics[scale=.8]{exemple1}
 	\caption{Solution de l'exemple 1}
 	\end{center}
       \end{figure}
@@ -146,6 +203,22 @@ La solution exacte étant $u(t)=sin(t)$
 
 
   \subsection{Réponse du CircuitA}
+  \begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=.7]{circuitTest}
+	\caption{Circuit A}
+	\end{center}
+      \end{figure}
+   Le circuit A est un circuit RC du 1\ier ordre, régit par l'équation différentielle :
+   \begin{equation*}
+    Vs+RC\cdot Vs'=Ve
+   \end{equation*}
+  Nous allons étudier la réponse du circuit A à plusieur type d'exitation, avec comme paramètres de simulation :  \\
+  \begin{itemize}
+   \item R=1 et C=1
+   \item durée= ,durée= 
+  \end{itemize}
+
 \begin{figure}[h!]
    \begin{minipage}[b]{0.5\linewidth}
       \centering \includegraphics[scale=0.68]{CAechelon.pdf}
@@ -164,7 +237,25 @@ La solution exacte étant $u(t)=sin(t)$
 
 \newpage
   \subsection{Réponse du CircuitB}
+  
+\begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=.7]{circuitTest}
+	\caption{Circuit B}
+	\end{center}
+      \end{figure}
+   Le circuit B est un circuit RC du 1\ier ordre, il n'est pas linéaire à cause de la diode, nous devons donc l'étudier dans 2 cas .\\
+   \textbf{1er cas :} diode passante (Vd>0.6), on a une équation de charge de la capacitée .\\
+   \textbf{2ième cas :} diode bloqué(Vd<0.6), on a une équationn de decharge de la capacité dans la résistance.\\
+   Notre programme test la condition de Vd pour savoir quelle équation il doit résoudre, par ailleur ici on doit prendre en compte les conditions initialles.\\
+   Car lors d'un changement d'équation, nous avons des conditions ``initialles''différentes .\\
 
+   Nous allons étudier la réponse du circuit B à plusieur type d'exitation, avec comme paramètres de simulation :  \\
+  \begin{itemize}
+   \item R=1 et C=1
+   \item durée= ,durée= 
+  \end{itemize}
+ 
   \begin{figure}[h!]
    \begin{minipage}[b]{0.5\linewidth}
       \centering \includegraphics[scale=0.68]{CBechelon.pdf}
@@ -182,6 +273,23 @@ La solution exacte étant $u(t)=sin(t)$
 \end{figure}
 \newpage
   \subsection{Réponse du CircuitC}
+
+  \begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=.7]{circuitTest}
+	\caption{Circuit A}
+	\end{center}
+      \end{figure}
+   Le circuit C est un circuit RLC du 2\ieme ordre, régit par l'équation différentielle :
+   \begin{equation*}
+    Todo
+   \end{equation*}
+  Nous allons étudier la réponse du circuit C à plusieur types d'exitations, avec comme paramètres de simulation :  \\
+  \begin{itemize}
+   \item R=1 et C=1
+   \item pas= ,durée= 
+  \end{itemize}
+
 
   \begin{figure}[h!]
    \begin{minipage}[b]{0.5\linewidth}
@@ -201,6 +309,22 @@ La solution exacte étant $u(t)=sin(t)$
 
 \newpage
   \subsection{Réponse du CircuitD}
+  
+\begin{figure}[H]
+	 \begin{center}
+	\includegraphics[scale=.7]{circuitTest}
+	\caption{Circuit D}
+	\end{center}
+      \end{figure}
+   Le circuit D est un circuit RLC du 2\ieme ordre, régit par l'équation différentielle :
+   \begin{equation*}
+    Todo
+   \end{equation*}
+  Nous allons étudier la réponse du circuit D à plusieur types d'exitations, avec comme paramètres de simulation :  \\
+  \begin{itemize}
+   \item R=1 et C=1
+   \item pas= ,durée= 
+  \end{itemize}
 
 \begin{figure}[h!]
    \begin{minipage}[b]{0.5\linewidth}
@@ -223,21 +347,23 @@ La solution exacte étant $u(t)=sin(t)$
 
   \newpage
   \appendix
-  
-  \section{main.cpp}
+  \section{Listing du programme}
+  \subsection{main.cpp}
     \lstinputlisting{../main.cpp}
     \newpage
-  \section{circuits.h}
+  \subsection{circuits.h}
     \lstinputlisting{../circuits.h}
     \newpage
-  \section{circuits.cpp}
+  \subsection{circuits.cpp}
     \lstinputlisting{../circuits.cpp}
     \newpage
-   \section{sources.h}
+   \subsection{sources.h}
     \lstinputlisting{../sources.h}
     \newpage
-   \section{sources.cpp}
+   \subsection{sources.cpp}
     \lstinputlisting{../sources.cpp}
     \newpage
-
+  \section{Gnuplot}
+    explication brève , passage de code
+    
 \end{document}

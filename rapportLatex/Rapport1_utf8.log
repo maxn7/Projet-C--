@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.27)  5 DEC 2011 17:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.27)  28 DEC 2011 11:43
 entering extended mode
  %&-line parsing enabled.
 **Rapport1_utf8.tex
@@ -702,172 +702,176 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
-! LaTeX Error: File `circuitDiagram' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.87 	  \includegraphics[scale=.7]{circuitDiagram}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
 
-! LaTeX Error: File `sourceDiagram' not found.
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95 	\includegraphics[scale=.7]{sourceDiagram}
-                                               
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ []
 
-[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+[2] <images/circuitDiagram.png, id=122, 845.1575pt x 596.2275pt>
+File: images/circuitDiagram.png Graphic file (type png)
+
+<use images/circuitDiagram.png>
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.99 \newpage
-             pdfTeX warning (ext4): destination with the same identifier (name{
-figure.2}) has been already used, duplicate ignored
+l.141 
+       <./images/circuitDiagram.png (PNG copy)>]
+<images/sourceDiagram.png, id=130, 894.34125pt x 367.3725pt>
+File: images/sourceDiagram.png Graphic file (type png)
+
+<use images/sourceDiagram.png> [4pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.99 \newpage
-             ]
+l.157 \newpage
+               <./images/sourceDiagram.png (PNG copy)>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/exemple1.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<images/exemple1.pdf, id=104, 361.35pt x 216.81pt>
+<images/exemple1.pdf, id=136, 361.35pt x 216.81pt>
 File: images/exemple1.pdf Graphic file (type pdf)
  <use images/exemple1.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/exemple2.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<images/exemple2.pdf, id=106, 361.35pt x 216.81pt>
+<images/exemple2.pdf, id=138, 361.35pt x 216.81pt>
 File: images/exemple2.pdf Graphic file (type pdf)
  <use images/exemple2.pdf>
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.144 
-       <./images/exemple1.pdf>] [4pdfTeX warning (ext4): destination with the s
-ame identifier (name{figure.4}) has been already used, duplicate ignored
+l.202 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.145 \newpage
-               <./images/exemple2.pdf>]
+l.202 \newpage
+               <./images/exemple1.pdf> <./images/exemple2.pdf>]
+<images/circuitTest.png, id=167, 393.47pt x 149.55875pt>
+File: images/circuitTest.png Graphic file (type png)
+
+<use images/circuitTest.png>
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CAechelon.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<images/CAechelon.pdf, id=140, 361.35pt x 216.81pt>
+<images/CAechelon.pdf, id=168, 361.35pt x 216.81pt>
 File: images/CAechelon.pdf Graphic file (type pdf)
  <use images/CAechelon.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CAporte.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CAporte.pdf, id=142, 361.35pt x 216.81pt>
+<images/CAporte.pdf, id=170, 361.35pt x 216.81pt>
 File: images/CAporte.pdf Graphic file (type pdf)
  <use images/CAporte.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CAcarre.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CAcarre.pdf, id=144, 361.35pt x 216.81pt>
+<images/CAcarre.pdf, id=172, 361.35pt x 216.81pt>
 File: images/CAcarre.pdf Graphic file (type pdf)
  <use images/CAcarre.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CAtriangle.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<images/CAtriangle.pdf, id=146, 361.35pt x 216.81pt>
+<images/CAtriangle.pdf, id=174, 361.35pt x 216.81pt>
 File: images/CAtriangle.pdf Graphic file (type pdf)
 
 <use images/CAtriangle.pdf>
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 150--162
+Overfull \hbox (2.42162pt too wide) in paragraph at lines 223--235
 [] [] 
  []
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.165 \newpage
-               <./images/CAechelon.pdf> <./images/CAporte.pdf> <./images/CAcarr
-e.pdf> <./images/CAtriangle.pdf>]
+l.238 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.238 \newpage
+               <./images/circuitTest.png (PNG copy)> <./images/CAechelon.pdf> <
+./images/CAporte.pdf> <./images/CAcarre.pdf> <./images/CAtriangle.pdf>]
+File: images/circuitTest.png Graphic file (type png)
+
+<use images/circuitTest.png>
+Underfull \hbox (badness 10000) in paragraph at lines 247--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CBechelon.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<images/CBechelon.pdf, id=185, 361.35pt x 216.81pt>
+<images/CBechelon.pdf, id=214, 361.35pt x 216.81pt>
 File: images/CBechelon.pdf Graphic file (type pdf)
  <use images/CBechelon.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CBporte.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CBporte.pdf, id=187, 361.35pt x 216.81pt>
+<images/CBporte.pdf, id=216, 361.35pt x 216.81pt>
 File: images/CBporte.pdf Graphic file (type pdf)
  <use images/CBporte.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CBcarre.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CBcarre.pdf, id=189, 361.35pt x 216.81pt>
+<images/CBcarre.pdf, id=218, 361.35pt x 216.81pt>
 File: images/CBcarre.pdf Graphic file (type pdf)
  <use images/CBcarre.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CBtriangle.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<images/CBtriangle.pdf, id=191, 361.35pt x 216.81pt>
+<images/CBtriangle.pdf, id=220, 361.35pt x 216.81pt>
 File: images/CBtriangle.pdf Graphic file (type pdf)
 
 <use images/CBtriangle.pdf>
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 169--181
-[] [] 
- []
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.183 \newpage
-               <./images/CBechelon.pdf> <./images/CBporte.pdf> <./images/CBcarr
-e.pdf> <./images/CBtriangle.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CCechelon.pdf): PDF inclusion:
- found PDF version <1.5>, but at most version <1.4> allowed
-<images/CCechelon.pdf, id=230, 361.35pt x 216.81pt>
-File: images/CCechelon.pdf Graphic file (type pdf)
- <use images/CCechelon.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CCporte.pdf): PDF inclusion: f
-ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CCporte.pdf, id=232, 361.35pt x 216.81pt>
-File: images/CCporte.pdf Graphic file (type pdf)
- <use images/CCporte.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CCcarre.pdf): PDF inclusion: f
-ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CCcarre.pdf, id=234, 361.35pt x 216.81pt>
-File: images/CCcarre.pdf Graphic file (type pdf)
- <use images/CCcarre.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/CCtriangle.pdf): PDF inclusion
-: found PDF version <1.5>, but at most version <1.4> allowed
-<images/CCtriangle.pdf, id=236, 361.35pt x 216.81pt>
-File: images/CCtriangle.pdf Graphic file (type pdf)
-
-<use images/CCtriangle.pdf>
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 187--199
+Overfull \hbox (2.42162pt too wide) in paragraph at lines 260--272
 [] [] 
  []
 
@@ -876,49 +880,118 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.202 \newpage
+l.274 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.274 \newpage
+               <./images/CBechelon.pdf> <./images/CBporte.pdf> <./images/CBcarr
+e.pdf> <./images/CBtriangle.pdf>]
+File: images/circuitTest.png Graphic file (type png)
+ <use images/circuitTest.png>
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
+
+ []
+
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/CCechelon.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+<images/CCechelon.pdf, id=261, 361.35pt x 216.81pt>
+File: images/CCechelon.pdf Graphic file (type pdf)
+ <use images/CCechelon.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/CCporte.pdf): PDF inclusion: f
+ound PDF version <1.5>, but at most version <1.4> allowed
+<images/CCporte.pdf, id=263, 361.35pt x 216.81pt>
+File: images/CCporte.pdf Graphic file (type pdf)
+ <use images/CCporte.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/CCcarre.pdf): PDF inclusion: f
+ound PDF version <1.5>, but at most version <1.4> allowed
+<images/CCcarre.pdf, id=265, 361.35pt x 216.81pt>
+File: images/CCcarre.pdf Graphic file (type pdf)
+ <use images/CCcarre.pdf>
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/CCtriangle.pdf): PDF inclusion
+: found PDF version <1.5>, but at most version <1.4> allowed
+<images/CCtriangle.pdf, id=267, 361.35pt x 216.81pt>
+File: images/CCtriangle.pdf Graphic file (type pdf)
+
+<use images/CCtriangle.pdf>
+Overfull \hbox (2.42162pt too wide) in paragraph at lines 295--307
+[] [] 
+ []
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.310 \newpage
+              pdfTeX warning (ext4): destination with the same identifier (name
+{figure.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.310 \newpage
                <./images/CCechelon.pdf> <./images/CCporte.pdf> <./images/CCcarr
 e.pdf> <./images/CCtriangle.pdf>]
+File: images/circuitTest.png Graphic file (type png)
+ <use images/circuitTest.png>
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+
+ []
+
+
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CDechelon.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<images/CDechelon.pdf, id=276, 361.35pt x 216.81pt>
+<images/CDechelon.pdf, id=307, 361.35pt x 216.81pt>
 File: images/CDechelon.pdf Graphic file (type pdf)
  <use images/CDechelon.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CDporte.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CDporte.pdf, id=278, 361.35pt x 216.81pt>
+<images/CDporte.pdf, id=309, 361.35pt x 216.81pt>
 File: images/CDporte.pdf Graphic file (type pdf)
  <use images/CDporte.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CDcarre.pdf): PDF inclusion: f
 ound PDF version <1.5>, but at most version <1.4> allowed
-<images/CDcarre.pdf, id=280, 361.35pt x 216.81pt>
+<images/CDcarre.pdf, id=311, 361.35pt x 216.81pt>
 File: images/CDcarre.pdf Graphic file (type pdf)
  <use images/CDcarre.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/CDtriangle.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<images/CDtriangle.pdf, id=282, 361.35pt x 216.81pt>
+<images/CDtriangle.pdf, id=313, 361.35pt x 216.81pt>
 File: images/CDtriangle.pdf Graphic file (type pdf)
 
 <use images/CDtriangle.pdf>
-Overfull \hbox (2.42162pt too wide) in paragraph at lines 206--218
+Overfull \hbox (2.42162pt too wide) in paragraph at lines 330--342
 [] [] 
  []
 
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
-has been already used, duplicate ignored
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.11})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.224   \newpage
+l.348   \newpage
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.348   \newpage
                  <./images/CDechelon.pdf> <./images/CDporte.pdf> <./images/CDca
 rre.pdf> <./images/CDtriangle.pdf>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 228.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 228.
+nput line 352.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 352.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
@@ -941,7 +1014,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [9] (../circuits.h [10]) [11] (../circuits.cpp [12]
+) [10] (../circuits.h [11]) [12] (../circuits.cpp [13]
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC¨ not set up for use with La
 TeX.
@@ -956,7 +1029,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[13] [14]
+[14] [15]
 
 ! Package inputenc Error: Unicode char \u8:Ã\lst@EC© not set up for use with La
 TeX.
@@ -971,34 +1044,35 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [15] (../sources.h) [16] (../sources.cpp [17]) [18] (./Rapport1_utf8.aux) ) 
+) [16] (../sources.h) [17] (../sources.cpp [18]) [19] [20] (./Rapport1_utf8.aux
+) ) 
 Here is how much of TeX's memory you used:
- 9788 strings out of 495061
- 132301 string characters out of 1182620
+ 9806 strings out of 495061
+ 132833 string characters out of 1182620
  665961 words of memory out of 3000000
- 12168 multiletter control sequences out of 15000+50000
- 21727 words of font info for 58 fonts, out of 3000000 for 9000
+ 12185 multiletter control sequences out of 15000+50000
+ 22416 words of font info for 59 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,12n,58p,278b,1838s stack positions out of 5000i,500n,10000p,200000b,50000s
- <
-/home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/jeje/.
-texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/jeje/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/jeje/.texmf-var/fonts/pk/ljfou
-r/jknappen/ec/eccc1095.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.6
-00pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home
-/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/jeje/.texmf
--var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/jeje/.texmf-var/fonts/p
-k/ljfour/jknappen/ec/eccc1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jkn
-appen/ec/ecrm1440.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-x2074.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Rapport1_utf8.pdf (18 pages, 485175 bytes).
+ </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/j
+eje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/jeje/.texmf-v
+ar/fonts/pk/ljfour/jknappen/ec/eccc1095.600pk> </home/jeje/.texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecbx1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecti1095.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0
+700.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> <
+/home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/jeje/.
+texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/jeje/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfou
+r/jknappen/ec/eccc1200.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecrm1440.600pk> </home/jeje/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.6
+00pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb>
+Output written on Rapport1_utf8.pdf (20 pages, 570091 bytes).
 PDF statistics:
- 1372 PDF objects out of 1440 (max. 8388607)
- 572 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1456 PDF objects out of 1728 (max. 8388607)
+ 582 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
