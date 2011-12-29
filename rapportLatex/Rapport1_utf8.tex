@@ -80,31 +80,34 @@ showstringspaces=false}
 %Objectif
 
 \section{Objectif}
-Nous devons réaliser un programme en C++ permetant de résoudre des équations différentielles du 1\ier et 2\ieme ordre à coefficients constants.\\
-Ce type d'équation se retrouve en électronique lors de la résolution de circuits RC, RLC. Nous allons utliser une méthode de résolution 
-numérique de type différence finis. Nous utliserons plus particulierement la méthode d'Euler.\\
+Nous devons réaliser un programme en C++ permetant de résoudre des équations différentielles du 1\ier et 2\ieme ordre à coefficients constants.
+Nous allons utliser une méthode de résolution numérique de type différences finie. Nous utliserons plus particulierement la méthode d'Euler.
 
 L'utilisateur du programme pourra via un terminal :
 \begin{itemize}
  \item choisir le type de circuit (1 ou 2 ordre)
  \item choisir les valeur de ces composants
- \item choisir le type de source (c'est a dire le second membre de l'equation différentielle\\
+ \item choisir le type de source (c'est a dire le second membre de l'equation différentielle)\\
 \end{itemize}
 
-\emph{Le pas de simulation et la durée son réglé par defaut, (mais il peuvent etre facilement modifiés).}\\
+\paragraph{remarque : }Le pas et la durée de la simulation sont réglés par défaut. L'utilisateur n'y a pas accès. Nous n'avons pas voulu implémenter 
+cette fonctionnalité pour ne pas surcharger le programme, d'autant plus qu'elle n'apporte pas plus de concept orienté objet. 
 
-Le programme affichera dans le terminal ou dans un fichier texte la solution numérique trouvée. Il sera alors possible de la tracer (voir annexe Gnuplot).\\
 
-Nous allons à présent détailler et expliquer la structure de notre programme et les choix que l'on a fait. Puis nous commenterons nos 
+\paragraph{}Le programme ecrira dans le terminal ou dans un fichier formaté la solution numérique trouvée. 
+Il sera alors possible de la tracer (voir annexe Gnuplot).\\
+
+Nous allons à présent détailler et expliquer la structure de notre programme et les choix que nous avons a fait. Puis nous commenterons les 
 résultat obtenus sur les divers circuits. 
-Une fois notre code opérationel nous essayerons d'étudier la méthode d'Euler plus en détaille (influence du pas sur l'erreur, convergence ...).\\
-En annexe nous détaillerons notre méthode pour tracé nos résultats via un script élementaire unix et l'utilitaire Gnuplot.
+Une fois notre code opérationel nous regarderons les limites de la éthode d'Euler.\\
+En annexe nous détaillons notre méthode pour obtenir et tracer les résultats via un script élementaire unix et le programme Gnuplot.
 \newpage
+
 \section{Organistion du code}
   \subsection{Le concept général}
-  Nous utilisons principalement les notions de classe, héritage, polymorphysme .\\
+  Nous devons nous familiariser avec les notions de classe, héritage, polymorphysme .\\
   En effet en fonction du type de circuit la méthode de
-  résolution n'est plus la meme, nous faisont apelle a la notion de polymorphysme pour résoudre se problème. Dans notre cas les fonctions 
+  résolution n'est plus la meme, nous faisons donc appel a la notion de polymorphysme pour résoudre se problème. Dans notre cas les fonctions 
   circuitSolve() et diffsolve() auront plusieurs versions possible en fonction du circuit.
   \subsection{L'objet circuit}
     \begin{figure}[H]
@@ -136,8 +139,8 @@ La classe Circuit1:
   \item définition de la fonction circuiSolve(),qui permet de calculer résoudre au''+bu'+cu=E  \\
 \end{itemize}
 
-\noindent Les autres classe héritant de ces 2 dernières, permettent de résoudre les circuit A,B,C,D, nous avons essayé de relier les exemples dans le cas général en considérant 
-leurs seconds membres commes des sources particulières. \\
+\noindent Les autres classes, héritant de ces 2 dernières, permettent de résoudre les circuit A,B,C,D, nous avons essayé de relier les exemples 
+dans le cas général en considérant leurs seconds membres commes des sources particulières. \\
 
   \subsection{L'objet source}
     \begin{figure}[H]
@@ -147,13 +150,19 @@ leurs seconds membres commes des sources particulières. \\
 	\end{center}
       \end{figure}
 
-Les classe carré,échelon, ... héritent de la classe mère source. Elles définissent chacune une vesion de la fontion E(t) et règle certains
+Les classes carré, échelon... héritent de la classe mère source. Elles définissent chacune une vesion de la fontion E(t) et règle certains
 attributs qui leurs sont propres comme l'amplitude, fréquences, offset ... .\\
-La fonction E(t) renvoit la valeur à l'instant t de la source. L'objet Circuit vat avoir comme attribut une source, car il en a besoin 
-lors de la résolution de l'equation différentielle.
-\subsection{Le main}
-Notre main permet à l'utilisateur de choisir son circuit, il cré donc un pointeur sur le circuit en question. Et il execute ensuite la methode d'affichage de la solution du 
-circuit qui est diffsolve().
+La fonction E(t) renvoit la valeur à l'instant t de la source. L'objet Circuit va avoir comme attributs une source (ou plutôt un pointeur sur un source), 
+car elle intervient dans la définition de l'équation différentielle à résoudre (seconde membre).
+
+\subsection{Le programme principal (main)}
+Notre \textit{main} créer un pointeur vers un type de montage et l'initialise selon de choix de l'utilisateur.
+Il execute ensuite la methode de résolution et d'affichage de la solution du circuit qui est diffsolve().
+
+\paragraph{Remarque : }La seule sortie du programme est \textit{stdout}. Pour alléger au maximum le programme, nous n'avons pas voulu 
+utiliser une sortie supplémentaire (vers un fichier via \textit{fpritf} par exemple). Lorsque nous voulons collecter les données de sortie 
+du programme dans un fichier nous utilisons la synthaxe Unix : \textit{./programme > fichier.txt}
+
 \newpage
 
 \section{Résultats}
@@ -363,7 +372,8 @@ La solution exacte étant $u(t)=sin(t)$
    \subsection{sources.cpp}
     \lstinputlisting{../sources.cpp}
     \newpage
-  \section{Gnuplot}
-    explication brève , passage de code
+  \section{Script de tracé des courbes et Gnuplot}
+    En fainéant et pauvres étudiant que nous sommes, nous cherchions une solution rapide, gratuite et disponible chez soi pour générer les tracés 
+demandés. Notre programme prend en entrée 
     
 \end{document}
