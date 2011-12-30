@@ -3,7 +3,7 @@
 \BOOKMARK [2][-]{subsection.2.1}{Le concept g\351n\351ral}{section.2}
 \BOOKMARK [2][-]{subsection.2.2}{L'objet circuit}{section.2}
 \BOOKMARK [2][-]{subsection.2.3}{L'objet source}{section.2}
-\BOOKMARK [2][-]{subsection.2.4}{Le main}{section.2}
+\BOOKMARK [2][-]{subsection.2.4}{Le programme principal \(main\)}{section.2}
 \BOOKMARK [1][-]{section.3}{R\351sultats}{}
 \BOOKMARK [2][-]{subsection.3.1}{Exemple 1}{section.3}
 \BOOKMARK [2][-]{subsection.3.2}{Exemple 2}{section.3}
@@ -17,4 +17,6 @@
 \BOOKMARK [2][-]{subsection.A.3}{circuits.cpp}{appendix.A}
 \BOOKMARK [2][-]{subsection.A.4}{sources.h}{appendix.A}
 \BOOKMARK [2][-]{subsection.A.5}{sources.cpp}{appendix.A}
-\BOOKMARK [1][-]{appendix.B}{Gnuplot}{}
+\BOOKMARK [1][-]{appendix.B}{Script de colelcte des donn\351es et Gnuplot}{}
+\BOOKMARK [2][-]{subsection.B.1}{collecte.sh}{appendix.B}
+\BOOKMARK [2][-]{subsection.B.2}{aTrace}{appendix.B}

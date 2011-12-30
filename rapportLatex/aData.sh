@@ -1,4 +1,4 @@
-
+#Script
 
 echo 2 1 1 1 | ../main > ../plot/CAechelon.dat;
 echo 2 2 1 1 | ../main > ../plot/CAporte.dat;
@@ -22,7 +22,9 @@ echo 6 2 1 1 1 | ../main > ../plot/CDporte.dat;
 echo 6 3 1 1 1 | ../main > ../plot/CDcarre.dat;
 echo 6 4 1 1 1 | ../main > ../plot/CDtriangle.dat;
 
-gnuplot aTrace;
+gnuplot aTrace; # On génére les courbes
+
+#Concaténation des courbes pour un apperçu plus facile
 rm images/concat.pdf
 pdftk images/*.pdf cat output images/concat.pdf;
 

@@ -372,8 +372,64 @@ La solution exacte étant $u(t)=sin(t)$
    \subsection{sources.cpp}
     \lstinputlisting{../sources.cpp}
     \newpage
-  \section{Script de tracé des courbes et Gnuplot}
+
+\lstset{language=bash,
+basicstyle=\ttfamily\footnotesize,
+breaklines, 
+keywordstyle=\bfseries\color{blue},
+stringstyle=\color{red},
+commentstyle=\color{blue!20!black!30!green},
+morecomment=[s][\color{black}]{/*}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=2,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
+
+
+  \section{Script de colelcte des données et Gnuplot}
     En fainéant et pauvres étudiant que nous sommes, nous cherchions une solution rapide, gratuite et disponible chez soi pour générer les tracés 
-demandés. Notre programme prend en entrée 
-    
+demandés. Notre programme prend en entrée une combinaison correspondant au choix de l'utilisateur et renvoi les données dans la sortie standart.
+Par exemple pour demander au programme de nous afficher les résultats de l'exemple 1 on utilise le \textit{pipe} qui dirige la sortie d'un programme 
+vers l'entrée d'un autre :
+
+\begin{lstlisting}
+ echo 1 5 | ./main
+\end{lstlisting}
+
+En se plaçant évidemment au préalable dans le répertoire contenant notre fichier objet apellé \textit{main}.\\
+Pour envoyer ces résultats dans un fichier on utilise le chevron :
+
+\begin{lstlisting}
+ echo 1 5 | ./main > donnees.dat
+\end{lstlisting}
+
+Automatiser la procedure revient à exécuter cette inscructions pour toutes les données demandées, c'est quasiment du copier-coller :
+
+  \subsection{collecte.sh}
+    \lstinputlisting{collecte.sh}
+
+Les dernières lignes apellent GNUplot. Le fichier \textit{aTrace} dit au logiciel ou se trouvent les données, où il doit les tracées,
+leur format de sortie, les légendes, etc... Lui aussi est un peu répétitif.
+
+\lstset{language=GNUplot,
+basicstyle=\ttfamily\footnotesize,
+breaklines, 
+keywordstyle=\bfseries\color{blue},
+stringstyle=\color{red},
+commentstyle=\color{blue!20!black!30!green},
+morecomment=[s][\color{black}]{/*}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=2,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
+
+  \subsection{aTrace}
+    \lstinputlisting{aTrace}
+
 \end{document}

@@ -1,10 +1,13 @@
 \select@language {french}
 \contentsline {section}{\numberline {1}Objectif}{2}{section.1}
+\contentsline {paragraph}{remarque : }{2}{section*.2}
+\contentsline {paragraph}{}{2}{section*.3}
 \contentsline {section}{\numberline {2}Organistion du code}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Le concept g\IeC {\'e}n\IeC {\'e}ral}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}L'objet circuit}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}L'objet source}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Le main}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Le programme principal (main)}{4}{subsection.2.4}
+\contentsline {paragraph}{Remarque : }{4}{section*.4}
 \contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Exemple 1}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Exemple 2}{5}{subsection.3.2}
@@ -18,4 +21,6 @@
 \contentsline {subsection}{\numberline {A.3}circuits.cpp}{13}{subsection.A.3}
 \contentsline {subsection}{\numberline {A.4}sources.h}{17}{subsection.A.4}
 \contentsline {subsection}{\numberline {A.5}sources.cpp}{18}{subsection.A.5}
-\contentsline {section}{\numberline {B}Gnuplot}{20}{appendix.B}
+\contentsline {section}{\numberline {B}Script de colelcte des donn\IeC {\'e}es et Gnuplot}{20}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}collecte.sh}{20}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}aTrace}{20}{subsection.B.2}
