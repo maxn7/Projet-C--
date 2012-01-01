@@ -214,8 +214,8 @@ La solution exacte étant $u(t)=sin(t)$
   \subsection{Réponse du CircuitA}
   \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{circuitTest}
-	\caption{Circuit A}
+	\includegraphics[scale=.5]{circuitA}
+	%\caption{Circuit A}
 	\end{center}
       \end{figure}
    Le circuit A est un circuit RC du 1\ier ordre, régit par l'équation différentielle :
@@ -225,7 +225,7 @@ La solution exacte étant $u(t)=sin(t)$
   Nous allons étudier la réponse du circuit A à plusieur type d'exitation, avec comme paramètres de simulation :  \\
   \begin{itemize}
    \item R=1 et C=1
-   \item durée= ,durée= 
+     \item pas=.01 ,durée=10 
   \end{itemize}
 
 \begin{figure}[h!]
@@ -249,8 +249,8 @@ La solution exacte étant $u(t)=sin(t)$
   
 \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{circuitTest}
-	\caption{Circuit B}
+	\includegraphics[scale=.5]{circuitB}
+	%\caption{Circuit B}
 	\end{center}
       \end{figure}
    Le circuit B est un circuit RC du 1\ier ordre, il n'est pas linéaire à cause de la diode, nous devons donc l'étudier dans 2 cas .\\
@@ -262,7 +262,7 @@ La solution exacte étant $u(t)=sin(t)$
    Nous allons étudier la réponse du circuit B à plusieur type d'exitation, avec comme paramètres de simulation :  \\
   \begin{itemize}
    \item R=1 et C=1
-   \item durée= ,durée= 
+     \item pas=.01 ,durée=10 
   \end{itemize}
  
   \begin{figure}[h!]
@@ -285,8 +285,8 @@ La solution exacte étant $u(t)=sin(t)$
 
   \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{circuitTest}
-	\caption{Circuit A}
+	\includegraphics[scale=.5]{circuitC}
+	%\caption{Circuit A}
 	\end{center}
       \end{figure}
    Le circuit C est un circuit RLC du 2\ieme ordre, régit par l'équation différentielle :
@@ -296,7 +296,7 @@ La solution exacte étant $u(t)=sin(t)$
   Nous allons étudier la réponse du circuit C à plusieur types d'exitations, avec comme paramètres de simulation :  \\
   \begin{itemize}
    \item R=1 et C=1
-   \item pas= ,durée= 
+      \item pas=.01 ,durée=10 
   \end{itemize}
 
 
@@ -321,8 +321,8 @@ La solution exacte étant $u(t)=sin(t)$
   
 \begin{figure}[H]
 	 \begin{center}
-	\includegraphics[scale=.7]{circuitTest}
-	\caption{Circuit D}
+	\includegraphics[scale=.7]{circuitD}
+	%\caption{Circuit D}
 	\end{center}
       \end{figure}
    Le circuit D est un circuit RLC du 2\ieme ordre, régit par l'équation différentielle :
@@ -332,7 +332,7 @@ La solution exacte étant $u(t)=sin(t)$
   Nous allons étudier la réponse du circuit D à plusieur types d'exitations, avec comme paramètres de simulation :  \\
   \begin{itemize}
    \item R=1 et C=1
-   \item pas= ,durée= 
+   \item pas=.01 ,durée=10 
   \end{itemize}
 
 \begin{figure}[h!]
@@ -351,8 +351,40 @@ La solution exacte étant $u(t)=sin(t)$
  \caption{Réponse du circuit D}
 \end{figure}
 
+\newpage
+ \section{Bilan}
+\subsection{Conclusion}
+Nous sommes satisfait de notre programme, les résultat obtenus lors des diverses simulations sont cohérents avec la réalité physique .
+La structure de notre programme et le formalisme de l'orienté objet nous a permis d'avoir un code clair et qui peut s'adapter et se modifier trés simplement.\\
+Par exemple si l'on voudrait rajouter un nouveau type de source, seul l'objet source serait à modifier (\emph{principe de l'encapsulation}). \emph{L'héritage} et \emph{le polymorphysme}
+nous on permis de réduire considérablement la taille de notre code tout en y gagnant en lisibilité.\\
 
+En ce qui concerne la méthode numérique utilisée (méthode d'Euler), on remarque qu'elle s'implémente très simplement et donne de bon résultat. On remarque 
+la précision de la résolution dépend du pas de calcul.\\
+On utilise l'approximation suivante  :
+\begin{equation*}
+u'(x)=\frac{u(x+h)-u(x)}{h}+O(h)
+\end{equation*}
+\begin{equation*}
+u'(x)\approx\frac{u(x+h)-u(x)}{h}
+\end{equation*}
+La méthode numérique est donc consistante en $h$, c'est à dire que l'erreur est divisé par \textbf{a} quand le pas est divisé par \textbf{a} le nombre d'opération est quand a lui multiplié par \textbf{a} .
 
+\subsection{Amélioration possible}
+Si on change de schéma numérique, repartons du devellopement limité de u (on concidère que u est$ C^3$) :\\
+\begin{equation*}
+ u(x+h)=u(x)+h\cdot u'(x)+\frac{h^2}{2}\cdot u''(x)+O(h^3)
+\end{equation*}
+\begin{equation*}
+ u(x-h)=u(x)-h\cdot u'(x)+\frac{h^2}{2}\cdot u''(x)+O(h^3)
+\end{equation*}
+
+On obtient l'approximation suivante :
+\begin{equation*}
+u'(x)=\frac{u(x+h)-u(x-h)}{2h}+O(h^3)
+\end{equation*}
+
+Ce schéma serait consistant en $h^3$ ! la precision serait grandement améliorée comparait à la méthode précédente tout en gardant la meme nombre de calculs. 
 
   \newpage
   \appendix
@@ -389,7 +421,7 @@ showspaces=false,
 showstringspaces=false}
 
 
-  \section{Script de tracé des courbes et Gnuplot}
+  \section{Script de colelcte des données et Gnuplot}
     En fainéant et pauvres étudiant que nous sommes, nous cherchions une solution rapide, gratuite et disponible chez soi pour générer les tracés 
 demandés. Notre programme prend en entrée une combinaison correspondant au choix de l'utilisateur et renvoi les données dans la sortie standart.
 Par exemple pour demander au programme de nous afficher les résultats de l'exemple 1 on utilise le \textit{pipe} qui dirige la sortie d'un programme 
@@ -409,7 +441,7 @@ Pour envoyer ces résultats dans un fichier on utilise le chevron :
 Automatiser la procedure revient à exécuter cette inscructions pour toutes les données demandées, c'est quasiment du copier-coller :
 
   \subsection{collecte.sh}
-    \lstinputlisting{collecte.sh}
+%    \lstinputlisting{collecte.sh}
 
 Les dernières lignes apellent GNUplot. Le fichier \textit{aTrace} dit au logiciel ou se trouvent les données, où il doit les tracées,
 leur format de sortie, les légendes, etc... Lui aussi est un peu répétitif.

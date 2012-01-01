@@ -15,12 +15,15 @@
 \contentsline {subsection}{\numberline {3.4}R\IeC {\'e}ponse du CircuitB}{7}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}R\IeC {\'e}ponse du CircuitC}{8}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}R\IeC {\'e}ponse du CircuitD}{9}{subsection.3.6}
-\contentsline {section}{\numberline {A}Listing du programme}{10}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}main.cpp}{10}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}circuits.h}{11}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}circuits.cpp}{13}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}sources.h}{17}{subsection.A.4}
-\contentsline {subsection}{\numberline {A.5}sources.cpp}{18}{subsection.A.5}
-\contentsline {section}{\numberline {B}Script de colelcte des donn\IeC {\'e}es et Gnuplot}{20}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}collecte.sh}{20}{subsection.B.1}
-\contentsline {subsection}{\numberline {B.2}aTrace}{20}{subsection.B.2}
+\contentsline {section}{\numberline {4}Bilan}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Conclusion}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Am\IeC {\'e}lioration possible}{10}{subsection.4.2}
+\contentsline {section}{\numberline {A}Listing du programme}{11}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}main.cpp}{11}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}circuits.h}{12}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}circuits.cpp}{14}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}sources.h}{18}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}sources.cpp}{19}{subsection.A.5}
+\contentsline {section}{\numberline {B}Script de colelcte des donn\IeC {\'e}es et Gnuplot}{21}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}collecte.sh}{21}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}aTrace}{21}{subsection.B.2}
