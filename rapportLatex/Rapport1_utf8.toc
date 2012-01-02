@@ -1,29 +1,31 @@
 \select@language {french}
-\contentsline {section}{\numberline {1}Objectif}{2}{section.1}
-\contentsline {paragraph}{remarque : }{2}{section*.2}
-\contentsline {paragraph}{}{2}{section*.3}
-\contentsline {section}{\numberline {2}Organistion du code}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Le concept g\IeC {\'e}n\IeC {\'e}ral}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}L'objet circuit}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}L'objet source}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Le programme principal (main)}{4}{subsection.2.4}
-\contentsline {paragraph}{Remarque : }{4}{section*.4}
-\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Exemple 1}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Exemple 2}{5}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}R\IeC {\'e}ponse du CircuitA}{6}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}R\IeC {\'e}ponse du CircuitB}{7}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}R\IeC {\'e}ponse du CircuitC}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}R\IeC {\'e}ponse du CircuitD}{9}{subsection.3.6}
-\contentsline {section}{\numberline {4}Bilan}{10}{section.4}
-\contentsline {subsection}{\numberline {4.1}Conclusion}{10}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Am\IeC {\'e}lioration possible}{10}{subsection.4.2}
-\contentsline {section}{\numberline {A}Listing du programme}{11}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}main.cpp}{11}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}circuits.h}{12}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}circuits.cpp}{14}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}sources.h}{18}{subsection.A.4}
-\contentsline {subsection}{\numberline {A.5}sources.cpp}{19}{subsection.A.5}
-\contentsline {section}{\numberline {B}Script de colelcte des donn\IeC {\'e}es et Gnuplot}{21}{appendix.B}
-\contentsline {subsection}{\numberline {B.1}collecte.sh}{21}{subsection.B.1}
-\contentsline {subsection}{\numberline {B.2}aTrace}{21}{subsection.B.2}
+\contentsline {section}{\numberline {1}Objectif}{3}{section.1}
+\contentsline {paragraph}{Remarque : }{3}{section*.2}
+\contentsline {paragraph}{}{3}{section*.3}
+\contentsline {section}{\numberline {2}Organistion du code}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Le concept g\IeC {\'e}n\IeC {\'e}ral}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}L'objet circuit}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}L'objet source}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Le programme principal (main)}{5}{subsection.2.4}
+\contentsline {paragraph}{Remarque : }{5}{section*.4}
+\contentsline {section}{\numberline {3}R\IeC {\'e}sultats}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Exemple 1}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Exemple 2}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}R\IeC {\'e}ponse du CircuitA}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}R\IeC {\'e}ponse du CircuitB}{8}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}R\IeC {\'e}ponse du CircuitC}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}R\IeC {\'e}ponse du CircuitD}{10}{subsection.3.6}
+\contentsline {section}{\numberline {4}Bilan}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Conclusion}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Am\IeC {\'e}lioration possible}{11}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Programme}{11}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Sur le plan num\IeC {\'e}rique}{11}{subsubsection.4.2.2}
+\contentsline {section}{\numberline {A}Listing du programme}{12}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}main.cpp}{12}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}circuits.h}{13}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}circuits.cpp}{15}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}sources.h}{19}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}sources.cpp}{20}{subsection.A.5}
+\contentsline {section}{\numberline {B}Script de collecte des donn\IeC {\'e}es et Gnuplot}{22}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}collecte.sh}{22}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}aTrace}{22}{subsection.B.2}

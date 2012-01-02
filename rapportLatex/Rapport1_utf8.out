@@ -14,12 +14,14 @@
 \BOOKMARK [1][-]{section.4}{Bilan}{}
 \BOOKMARK [2][-]{subsection.4.1}{Conclusion}{section.4}
 \BOOKMARK [2][-]{subsection.4.2}{Am\351lioration possible}{section.4}
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Programme}{subsection.4.2}
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Sur le plan num\351rique}{subsection.4.2}
 \BOOKMARK [1][-]{appendix.A}{Listing du programme}{}
 \BOOKMARK [2][-]{subsection.A.1}{main.cpp}{appendix.A}
 \BOOKMARK [2][-]{subsection.A.2}{circuits.h}{appendix.A}
 \BOOKMARK [2][-]{subsection.A.3}{circuits.cpp}{appendix.A}
 \BOOKMARK [2][-]{subsection.A.4}{sources.h}{appendix.A}
 \BOOKMARK [2][-]{subsection.A.5}{sources.cpp}{appendix.A}
-\BOOKMARK [1][-]{appendix.B}{Script de colelcte des donn\351es et Gnuplot}{}
+\BOOKMARK [1][-]{appendix.B}{Script de collecte des donn\351es et Gnuplot}{}
 \BOOKMARK [2][-]{subsection.B.1}{collecte.sh}{appendix.B}
 \BOOKMARK [2][-]{subsection.B.2}{aTrace}{appendix.B}

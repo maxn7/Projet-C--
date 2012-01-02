@@ -23,6 +23,6 @@ echo 6 3 1 1 1 | ../main > ../plot/CDcarre.dat;
 echo 6 4 1 1 1 | ../main > ../plot/CDtriangle.dat;
 
 gnuplot aTrace;
-rm concat.pdf
-pdftk *.pdf cat output concat.pdf;
+rm images/concat.pdf
+pdftk images/*.pdf cat output images/concat.pdf;
 

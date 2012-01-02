@@ -52,11 +52,11 @@ showstringspaces=false}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}}
 % Titre a compl»ter
-\title{\textbf{ \huge{Projet de programmation C++}} \\{\Large  Résolution de circuit}}
+\title{\textbf{ \huge{Projet de programmation C++}}  \\{\Large  Résolution de circuits}}
 
 \author{
-\textsc{Jérémie Fourmann} (Promo 2013 - Eléctronique - Enseeiht)\\ %mettre votre nom
-\textsc{Maxime Morin} (Promo 2013 - Eléctronique - Enseeiht)\\ %mettre votre nom
+\textsc{Jérémie Fourmann} (Promo 2013 - Eléctronique)\\ %mettre votre nom
+\textsc{Maxime Morin} (Promo 2013 - Eléctronique)\\ %mettre votre nom
 %\textsc{ddd dddd} (Promo - departement - respo)     %2 nom
 }
 
@@ -67,6 +67,10 @@ showstringspaces=false}
 \pagestyle{plain}
 
 \maketitle
+\begin{center}
+\includegraphics[width=6cm]{inp-enseeiht.pdf}   
+\end{center}
+
 \vspace{1cm}
 \renewcommand{\contentsname}{Plan}
 \tableofcontents
@@ -80,35 +84,35 @@ showstringspaces=false}
 %Objectif
 
 \section{Objectif}
-Nous devons réaliser un programme en C++ permetant de résoudre des équations différentielles du 1\ier et 2\ieme ordre à coefficients constants.
-Nous allons utliser une méthode de résolution numérique de type différences finie. Nous utliserons plus particulierement la méthode d'Euler.
+Nous devons réaliser un programme en C++ permetant de résoudre des équations différentielles du $1\ier$ et du $2\ieme$ ordre à coefficients constants.
+Nous allons utliser une méthode de résolution numérique de type différences finies. Nous utliserons plus particulierement la méthode d'Euler.
 
 L'utilisateur du programme pourra via un terminal :
 \begin{itemize}
- \item choisir le type de circuit (1 ou 2 ordre)
- \item choisir les valeur de ces composants
+ \item choisir le type de circuit ($1\ier$ et du $2\ieme$ ordre)
+ \item choisir les valeurs des composants
  \item choisir le type de source (c'est a dire le second membre de l'equation différentielle)\\
 \end{itemize}
 
-\paragraph{remarque : }Le pas et la durée de la simulation sont réglés par défaut. L'utilisateur n'y a pas accès. Nous n'avons pas voulu implémenter 
+\paragraph{Remarque : }Le pas et la durée de la simulation sont réglés par défaut. L'utilisateur n'y a pas accès. Nous n'avons pas voulu implémenter 
 cette fonctionnalité pour ne pas surcharger le programme, d'autant plus qu'elle n'apporte pas plus de concept orienté objet. 
 
 
 \paragraph{}Le programme ecrira dans le terminal ou dans un fichier formaté la solution numérique trouvée. 
 Il sera alors possible de la tracer (voir annexe Gnuplot).\\
 
-Nous allons à présent détailler et expliquer la structure de notre programme et les choix que nous avons a fait. Puis nous commenterons les 
-résultat obtenus sur les divers circuits. 
-Une fois notre code opérationel nous regarderons les limites de la éthode d'Euler.\\
-En annexe nous détaillons notre méthode pour obtenir et tracer les résultats via un script élementaire unix et le programme Gnuplot.
+Nous allons à présent détailler et expliquer la structure de notre programme et les choix que nous avons a fait. Enfin nous commenterons les 
+résultat obtenus sur les différents circuits. 
+Une fois notre code opérationel nous regarderons les limites de la méthode d'Euler.\\
+En annexe nous détaillons notre méthode pour obtenir et tracer les résultats via un script élementaire Unix et le programme Gnuplot.
 \newpage
 
 \section{Organistion du code}
   \subsection{Le concept général}
-  Nous devons nous familiariser avec les notions de classe, héritage, polymorphysme .\\
+  Nous devons nous familiariser avec les notions de programmation orientée objet : classe, héritage, polymorphysme.
   En effet en fonction du type de circuit la méthode de
-  résolution n'est plus la meme, nous faisons donc appel a la notion de polymorphysme pour résoudre se problème. Dans notre cas les fonctions 
-  circuitSolve() et diffsolve() auront plusieurs versions possible en fonction du circuit.
+  résolution n'est pas la même, nous faisons donc appel a la notion de polymorphysme pour résoudre se problème. Dans notre cas les fonctions 
+  circuitSolve() et diffSolve() auront plusieurs versions possible en fonction du circuit.
   \subsection{L'objet circuit}
     \begin{figure}[H]
 	 \begin{center}
@@ -121,26 +125,26 @@ En annexe nous détaillons notre méthode pour obtenir et tracer les résultats 
 \noindent La classe Euler :
 \begin{itemize}
  \item permet de définir les paramètres de simulation
-  \item 2 méthode circuitSolve() et diffSolve() en virtuelles qui permettrons la résolutions du problème en fonction de la classe instancièe
+  \item les méthodes circuitSolve() et diffSolve() sont virtuelles et permettrons la résolution du problème en fonction de la classe instanciée
 \end{itemize}
 La classe Circuit :
 \begin{itemize}
  \item Hérite d'Euler
-  \item Son constructeur permet le choix de la Source 
+  \item Son constructeur permet le choix de la Source via un pointeur
 \end{itemize}
 La classe Circuit1:
 \begin{itemize}
  \item Hérite de circuit
-  \item définition de la fonction circuiSolve(),qui permet de calculer résoudre au'+bu=E  
+  \item définition de la fonction circuiSolve() qui permet de résoudre : $a \cdot u'+ b \cdot u = E$  
 \end{itemize}
 La classe Circuit1:
 \begin{itemize}
  \item Hérite de circuit
-  \item définition de la fonction circuiSolve(),qui permet de calculer résoudre au''+bu'+cu=E  \\
+  \item définition de la fonction circuiSolve(),qui permet de calculer résoudre : $ a\cdot u''+ b \cdot u'+c \cdot u = E$  \\
 \end{itemize}
 
 \noindent Les autres classes, héritant de ces 2 dernières, permettent de résoudre les circuit A,B,C,D, nous avons essayé de relier les exemples 
-dans le cas général en considérant leurs seconds membres commes des sources particulières. \\
+au cas général en considérant leurs seconds membres commes des sources particulières. \\
 
   \subsection{L'objet source}
     \begin{figure}[H]
@@ -150,24 +154,29 @@ dans le cas général en considérant leurs seconds membres commes des sources p
 	\end{center}
       \end{figure}
 
-Les classes carré, échelon... héritent de la classe mère source. Elles définissent chacune une vesion de la fontion E(t) et règle certains
-attributs qui leurs sont propres comme l'amplitude, fréquences, offset ... .\\
+Les classes carré, échelon... héritent de la classe mère source. Elles définissent chacune une version de la fontion E(t) et règle certains
+attributs qui leurs sont propres comme l'amplitude, fréquences, l'offset...\\
 La fonction E(t) renvoit la valeur à l'instant t de la source. L'objet Circuit va avoir comme attributs une source (ou plutôt un pointeur sur un source), 
 car elle intervient dans la définition de l'équation différentielle à résoudre (seconde membre).
+La méthode Esm(t) est une transformation affine de la source : $ Esm(t) = A \cdot E(t) + B$. \\A et B sont des attributs privés de la méthode.
+Ils sont modifiables par l'accesseur setAB( , ). Cette transformation permet de simuler une extinction de la source ou un offset (cas de la diode 
+passante par exemple) sans modifier ses paramètres intrinsèques.
 
 \subsection{Le programme principal (main)}
-Notre \textit{main} créer un pointeur vers un type de montage et l'initialise selon de choix de l'utilisateur.
+Notre \textit{main} crée un pointeur vers un type de montage et l'initialise selon de choix de l'utilisateur.
 Il execute ensuite la methode de résolution et d'affichage de la solution du circuit qui est diffsolve().
 
-\paragraph{Remarque : }La seule sortie du programme est \textit{stdout}. Pour alléger au maximum le programme, nous n'avons pas voulu 
+\paragraph{Remarque : }La seule sortie du programme est \textit{stdout} non redéfinie. Pour alléger au maximum le programme, nous n'avons pas voulu 
 utiliser une sortie supplémentaire (vers un fichier via \textit{fpritf} par exemple). Lorsque nous voulons collecter les données de sortie 
-du programme dans un fichier nous utilisons la synthaxe Unix : \textit{./programme > fichier.txt}
-
+du programme dans un fichier nous utilisons la syntaxe Unix : 
+\begin{lstlisting}
+ ./programme > fichier.txt
+\end{lstlisting}
 \newpage
 
 \section{Résultats}
   \subsection{Exemple 1}
-Résolution de l'équation différentielle du 1\ier ordre :
+Résolution de l'équation différentielle du $1\ier$ ordre :
 \begin{equation*}
  \left \{
   \begin{array}{c @{=} l}
@@ -186,7 +195,7 @@ La solution exacte étant $u(t)=-1/3\cdot exp(-3t)-1/3$
 	\end{center}
       \end{figure}
 \subsection{Exemple 2}
-Résolution de l'équation différentielle du 1\ier ordre :
+Résolution de l'équation différentielle du $1\ier$ ordre :
 \begin{equation*}
  \left \{
   \begin{array}{c @{=} l}
@@ -218,14 +227,14 @@ La solution exacte étant $u(t)=sin(t)$
 	%\caption{Circuit A}
 	\end{center}
       \end{figure}
-   Le circuit A est un circuit RC du 1\ier ordre, régit par l'équation différentielle :
+   Le circuit A est un circuit RC du $1\ier$ ordre, régit par l'équation différentielle :
    \begin{equation*}
     Vs+RC\cdot Vs'=Ve
    \end{equation*}
   Nous allons étudier la réponse du circuit A à plusieur type d'exitation, avec comme paramètres de simulation :  \\
   \begin{itemize}
-   \item R=1 et C=1
-     \item pas=.01 ,durée=10 
+   \item $R = 1 \Omega$ et $C = 1 F$
+     \item $pas = 0.01 s$ ,$durée = 10s$ 
   \end{itemize}
 
 \begin{figure}[h!]
@@ -253,16 +262,16 @@ La solution exacte étant $u(t)=sin(t)$
 	%\caption{Circuit B}
 	\end{center}
       \end{figure}
-   Le circuit B est un circuit RC du 1\ier ordre, il n'est pas linéaire à cause de la diode, nous devons donc l'étudier dans 2 cas .\\
-   \textbf{1er cas :} diode passante (Vd>0.6), on a une équation de charge de la capacitée .\\
-   \textbf{2ième cas :} diode bloqué(Vd<0.6), on a une équationn de decharge de la capacité dans la résistance.\\
-   Notre programme test la condition de Vd pour savoir quelle équation il doit résoudre, par ailleur ici on doit prendre en compte les conditions initialles.\\
-   Car lors d'un changement d'équation, nous avons des conditions ``initialles''différentes .\\
+   Le circuit B est un circuit RC du $1\ier$ ordre, il n'est pas linéaire à cause de la diode, nous devons donc l'étudier dans 2 cas.\\
+   \textbf{$1\ier$ cas :} diode passante ($Vd > 0.6$), on a une équation de charge de la capacité.\\
+   \textbf{$2\ieme$ cas :} diode bloqué($Vd < 0.6$), on a une équation de décharge de la capacité dans la résistance.\\
+   Notre programme test la condition de Vd pour savoir quelle équation il doit résoudre. Ici on doit prendre en compte les conditions initiales,
+  car on considère le changement d'équation comme un changement de condition initiales et une transformation affine de la source.
 
-   Nous allons étudier la réponse du circuit B à plusieur type d'exitation, avec comme paramètres de simulation :  \\
+   Nous allons étudier la réponse du circuit B à plusieurs type d'exitations, avec comme paramètres de simulation :  \\
   \begin{itemize}
-   \item R=1 et C=1
-     \item pas=.01 ,durée=10 
+   \item $R = 1 \Omega$ et $C = 1 F$
+     \item $pas = 0.01 s$ ,$durée = 10s$ 
   \end{itemize}
  
   \begin{figure}[h!]
@@ -289,14 +298,14 @@ La solution exacte étant $u(t)=sin(t)$
 	%\caption{Circuit A}
 	\end{center}
       \end{figure}
-   Le circuit C est un circuit RLC du 2\ieme ordre, régit par l'équation différentielle :
+   Le circuit C est un circuit RLC du $2\ieme$ ordre, régit par l'équation différentielle :
    \begin{equation*}
     Todo
    \end{equation*}
   Nous allons étudier la réponse du circuit C à plusieur types d'exitations, avec comme paramètres de simulation :  \\
   \begin{itemize}
-   \item R=1 et C=1
-      \item pas=.01 ,durée=10 
+   \item $R = 1 \Omega$ et $C = 1 F$
+     \item $pas = 0.01 s$ ,$durée = 10s$ 
   \end{itemize}
 
 
@@ -325,14 +334,14 @@ La solution exacte étant $u(t)=sin(t)$
 	%\caption{Circuit D}
 	\end{center}
       \end{figure}
-   Le circuit D est un circuit RLC du 2\ieme ordre, régit par l'équation différentielle :
+   Le circuit D est un circuit RLC du $2\ieme$ ordre, régit par l'équation différentielle :
    \begin{equation*}
     Todo
    \end{equation*}
   Nous allons étudier la réponse du circuit D à plusieur types d'exitations, avec comme paramètres de simulation :  \\
   \begin{itemize}
-   \item R=1 et C=1
-   \item pas=.01 ,durée=10 
+   \item $R = 1 \Omega$ et $C = 1 F$
+     \item $pas = 0.01 s$ ,$durée = 10s$ 
   \end{itemize}
 
 \begin{figure}[h!]
@@ -354,10 +363,11 @@ La solution exacte étant $u(t)=sin(t)$
 \newpage
  \section{Bilan}
 \subsection{Conclusion}
-Nous sommes satisfait de notre programme, les résultat obtenus lors des diverses simulations sont cohérents avec la réalité physique .
-La structure de notre programme et le formalisme de l'orienté objet nous a permis d'avoir un code clair et qui peut s'adapter et se modifier trés simplement.\\
-Par exemple si l'on voudrait rajouter un nouveau type de source, seul l'objet source serait à modifier (\emph{principe de l'encapsulation}). \emph{L'héritage} et \emph{le polymorphysme}
-nous on permis de réduire considérablement la taille de notre code tout en y gagnant en lisibilité.\\
+Nous sommes satisfaits de notre programme, les résultat obtenus lors des diverses simulations sont cohérents avec la réalité physique.
+La structure de notre programme et le formalisme de la POO nous a permis d'avoir un code léger, qui peut s'adapter et se modifier simplement.\\
+Par exemple si on voulait rajouter un nouveau type de source, seul l'objet source serait à modifier (\emph{principe de l'encapsulation}).
+ \emph{L'héritage} et \emph{le polymorphysme}
+nous on permis de réduire considérablement la taille de notre code tout en gagnant en lisibilité.\\
 
 En ce qui concerne la méthode numérique utilisée (méthode d'Euler), on remarque qu'elle s'implémente très simplement et donne de bon résultat. On remarque 
 la précision de la résolution dépend du pas de calcul.\\
@@ -368,9 +378,16 @@ u'(x)=\frac{u(x+h)-u(x)}{h}+O(h)
 \begin{equation*}
 u'(x)\approx\frac{u(x+h)-u(x)}{h}
 \end{equation*}
-La méthode numérique est donc consistante en $h$, c'est à dire que l'erreur est divisé par \textbf{a} quand le pas est divisé par \textbf{a} le nombre d'opération est quand a lui multiplié par \textbf{a} .
+La méthode numérique est donc consistante en $h$, c'est à dire que l'erreur est divisé par \textbf{a} quand le pas est divisé par \textbf{a} 
+le nombre d'opération est quand a lui multiplié par \textbf{a} .
 
 \subsection{Amélioration possible}
+\subsubsection{Programme}
+Certaines options pourraient encore être impélmentées sur le programme, notament l'accès aux paramètres de simulation. 
+Cependant on est loin d'un ``logiciel'', en commençant par l'interface graphique et l'affichage automatique des tracés,
+la liste des améliorations est encore longue et n'est pas du domaine des électroniciens.
+
+\subsubsection{Sur le plan numérique}
 Si on change de schéma numérique, repartons du devellopement limité de u (on concidère que u est$ C^3$) :\\
 \begin{equation*}
  u(x+h)=u(x)+h\cdot u'(x)+\frac{h^2}{2}\cdot u''(x)+O(h^3)
@@ -385,6 +402,7 @@ u'(x)=\frac{u(x+h)-u(x-h)}{2h}+O(h^3)
 \end{equation*}
 
 Ce schéma serait consistant en $h^3$ ! la precision serait grandement améliorée comparait à la méthode précédente tout en gardant la meme nombre de calculs. 
+
 
   \newpage
   \appendix
@@ -405,24 +423,11 @@ Ce schéma serait consistant en $h^3$ ! la precision serait grandement amélior�
     \lstinputlisting{../sources.cpp}
     \newpage
 
-\lstset{language=bash,
-basicstyle=\ttfamily\footnotesize,
-breaklines, 
-keywordstyle=\bfseries\color{blue},
-stringstyle=\color{red},
-commentstyle=\color{blue!20!black!30!green},
-morecomment=[s][\color{black}]{/*}{*/},
-numbers=left,
-numberstyle=\tiny\color{black},
-stepnumber=2,
-numbersep=10pt,
-tabsize=4,
-showspaces=false,
-showstringspaces=false}
 
 
-  \section{Script de colelcte des données et Gnuplot}
-    En fainéant et pauvres étudiant que nous sommes, nous cherchions une solution rapide, gratuite et disponible chez soi pour générer les tracés 
+
+  \section{Script de collecte des données et Gnuplot}
+    En fainéants et pauvres étudiants que nous sommes, nous cherchions une solution rapide, gratuite et disponible chez soi pour générer les tracés 
 demandés. Notre programme prend en entrée une combinaison correspondant au choix de l'utilisateur et renvoi les données dans la sortie standart.
 Par exemple pour demander au programme de nous afficher les résultats de l'exemple 1 on utilise le \textit{pipe} qui dirige la sortie d'un programme 
 vers l'entrée d'un autre :
@@ -438,13 +443,31 @@ Pour envoyer ces résultats dans un fichier on utilise le chevron :
  echo 1 5 | ./main > donnees.dat
 \end{lstlisting}
 
-Automatiser la procedure revient à exécuter cette inscructions pour toutes les données demandées, c'est quasiment du copier-coller :
+Automatiser la procedure revient à exécuter cette commande pour toutes les données demandées, c'est quasiment du copier-coller :
 
   \subsection{collecte.sh}
-%    \lstinputlisting{collecte.sh}
+\lstset{language=bash,
+basicstyle=\ttfamily\footnotesize,
+breaklines, 
+keywordstyle=\bfseries\color{blue},
+stringstyle=\color{red},
+commentstyle=\color{blue!20!black!30!green},
+morecomment=[s][\color{black}]{/*}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=2,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false}
+    \lstinputlisting{collecte.sh}
 
-Les dernières lignes apellent GNUplot. Le fichier \textit{aTrace} dit au logiciel ou se trouvent les données, où il doit les tracées,
-leur format de sortie, les légendes, etc... Lui aussi est un peu répétitif.
+Les dernières lignes apellent GNUplot. Le fichier \textit{aTrace} dit au logiciel ou se trouvent les données, où il doit les tracer,
+leur format de sortie, les légendes, etc... Lui aussi est répétitif. \\
+
+
+
+  \subsection{aTrace}
 
 \lstset{language=GNUplot,
 basicstyle=\ttfamily\footnotesize,
@@ -460,8 +483,6 @@ numbersep=10pt,
 tabsize=4,
 showspaces=false,
 showstringspaces=false}
-
-  \subsection{aTrace}
     \lstinputlisting{aTrace}
 
 \end{document}
